@@ -1,0 +1,22 @@
+{
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.configureEnvironment": {
+        "PATH": "D:/Qt/Tools/mingw1310_64/bin;${env:PATH}"
+    },
+    "cmake.configureSettings": {
+        "CMAKE_PREFIX_PATH": "D:/Qt/6.11.1/mingw_64",
+        "CMAKE_MAKE_PROGRAM": "D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe"
+    },
+    "clangd.arguments": [
+        "--query-driver=D:/Qt/Tools/mingw1310_64/bin/*",
+        "--compile-commands-dir=${workspaceFolder}/build"
+    ],
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.formatOnSave": true
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.formatOnSave": true
+    }
+}
