@@ -1,0 +1,31 @@
+# 编译产物
+build/
+*.exe
+*.obj
+*.o
+*.moc
+*.res
+
+# CMake 生成文件
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+*_autogen/
+
+# Qt 预处理产物
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统杂项
+Thumbs.db
+.DS_Store
+Desktop.ini
