@@ -35,6 +35,8 @@ signals:
   void stateChanged(Player::State state);
   void endOfMedia();
   void errorOccurred(const QString &msg);
+  void metaDataReady(const QString &title, const QString &artist,
+                     const QString &album);
 
 private:
   QMediaPlayer *m_player = nullptr;

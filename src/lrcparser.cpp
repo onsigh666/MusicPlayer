@@ -27,14 +27,16 @@ bool LrcParser::load(const QString &filePath) {
 
 void LrcParser::clear() { m_lines.clear(); }
 
-int LrcParser::lineAt(qint64 positionMs) const {
+int LrcParser::lineAt(qint64 positionMs, qint64 offsetMs) const {
     if (m_lines.isEmpty()) return -1;
 
-    // 二分查找最后一个 timestamp <= positionMs 的行
+    qint64 effective = positionMs + offsetMs; // 应用偏移
+
+    // 二分查找最后一个 timestamp <= effective 的行
     int lo = 0, hi = m_lines.size() - 1;
     while (lo <= hi) {
         int mid = (lo + hi) / 2;
-        if (m_lines[mid].timestamp <= positionMs) {
+        if (m_lines[mid].timestamp <= effective) {
             lo = mid + 1;
         } else {
             hi = mid - 1;

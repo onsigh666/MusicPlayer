@@ -50,6 +50,10 @@ template <> constexpr inline auto Player::qt_create_metaobjectdata<qt_meta_tag_Z
         "endOfMedia",
         "errorOccurred",
         "msg",
+        "metaDataReady",
+        "title",
+        "artist",
+        "album",
         "setSource",
         "filePath",
         "play",
@@ -80,23 +84,27 @@ template <> constexpr inline auto Player::qt_create_metaobjectdata<qt_meta_tag_Z
         QtMocHelpers::SignalData<void(const QString &)>(10, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 11 },
         }}),
+        // Signal 'metaDataReady'
+        QtMocHelpers::SignalData<void(const QString &, const QString &, const QString &)>(12, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 13 }, { QMetaType::QString, 14 }, { QMetaType::QString, 15 },
+        }}),
         // Slot 'setSource'
-        QtMocHelpers::SlotData<void(const QString &)>(12, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 13 },
+        QtMocHelpers::SlotData<void(const QString &)>(16, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 17 },
         }}),
         // Slot 'play'
-        QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(18, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'pause'
-        QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'stop'
-        QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'setVolume'
-        QtMocHelpers::SlotData<void(float)>(17, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::Float, 18 },
+        QtMocHelpers::SlotData<void(float)>(21, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Float, 22 },
         }}),
         // Slot 'setPosition'
-        QtMocHelpers::SlotData<void(qint64)>(19, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::LongLong, 20 },
+        QtMocHelpers::SlotData<void(qint64)>(23, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::LongLong, 24 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -126,12 +134,13 @@ void Player::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 2: _t->stateChanged((*reinterpret_cast<std::add_pointer_t<Player::State>>(_a[1]))); break;
         case 3: _t->endOfMedia(); break;
         case 4: _t->errorOccurred((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 5: _t->setSource((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 6: _t->play(); break;
-        case 7: _t->pause(); break;
-        case 8: _t->stop(); break;
-        case 9: _t->setVolume((*reinterpret_cast<std::add_pointer_t<float>>(_a[1]))); break;
-        case 10: _t->setPosition((*reinterpret_cast<std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 5: _t->metaDataReady((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3]))); break;
+        case 6: _t->setSource((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 7: _t->play(); break;
+        case 8: _t->pause(); break;
+        case 9: _t->stop(); break;
+        case 10: _t->setVolume((*reinterpret_cast<std::add_pointer_t<float>>(_a[1]))); break;
+        case 11: _t->setPosition((*reinterpret_cast<std::add_pointer_t<qint64>>(_a[1]))); break;
         default: ;
         }
     }
@@ -145,6 +154,8 @@ void Player::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         if (QtMocHelpers::indexOfMethod<void (Player::*)()>(_a, &Player::endOfMedia, 3))
             return;
         if (QtMocHelpers::indexOfMethod<void (Player::*)(const QString & )>(_a, &Player::errorOccurred, 4))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (Player::*)(const QString & , const QString & , const QString & )>(_a, &Player::metaDataReady, 5))
             return;
     }
 }
@@ -168,14 +179,14 @@ int Player::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 11)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 11;
+        _id -= 12;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 11)
+        if (_id < 12)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 11;
+        _id -= 12;
     }
     return _id;
 }
@@ -208,5 +219,11 @@ void Player::endOfMedia()
 void Player::errorOccurred(const QString & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 4, nullptr, _t1);
+}
+
+// SIGNAL 5
+void Player::metaDataReady(const QString & _t1, const QString & _t2, const QString & _t3)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 5, nullptr, _t1, _t2, _t3);
 }
 QT_WARNING_POP

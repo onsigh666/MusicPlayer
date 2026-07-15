@@ -42,6 +42,7 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "onOpenFiles",
         "",
         "onScanFolder",
+        "onClearAll",
         "onPlayPause",
         "onStop",
         "onNext",
@@ -57,6 +58,14 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "onVolumeChanged",
         "volume",
         "onTogglePlayMode",
+        "onLyricOffsetPlus",
+        "onLyricOffsetMinus",
+        "onTogglePanel",
+        "onSearchTextChanged",
+        "text",
+        "onLyricScrollChanged",
+        "value",
+        "onLyricJump",
         "refreshPlayPauseBtn",
         "Player::State",
         "state",
@@ -67,7 +76,11 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "refreshCurrentRow",
         "onTrackEnded",
         "onPlayerError",
-        "msg"
+        "msg",
+        "onMetaDataReady",
+        "title",
+        "artist",
+        "album"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -75,53 +88,75 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onScanFolder'
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onPlayPause'
+        // Slot 'onClearAll'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onStop'
+        // Slot 'onPlayPause'
         QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onNext'
+        // Slot 'onStop'
         QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'onPrevious'
+        // Slot 'onNext'
         QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onPrevious'
+        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onPlaylistDoubleClicked'
-        QtMocHelpers::SlotData<void(const QModelIndex &)>(8, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { 0x80000000 | 9, 10 },
+        QtMocHelpers::SlotData<void(const QModelIndex &)>(9, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 10, 11 },
         }}),
         // Slot 'onPlaylistContextMenu'
-        QtMocHelpers::SlotData<void(const QPoint &)>(11, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { 0x80000000 | 12, 13 },
+        QtMocHelpers::SlotData<void(const QPoint &)>(12, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 13, 14 },
         }}),
         // Slot 'onSeek'
-        QtMocHelpers::SlotData<void(int)>(14, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::Int, 15 },
+        QtMocHelpers::SlotData<void(int)>(15, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 16 },
         }}),
         // Slot 'onVolumeChanged'
-        QtMocHelpers::SlotData<void(int)>(16, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::Int, 17 },
+        QtMocHelpers::SlotData<void(int)>(17, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 18 },
         }}),
         // Slot 'onTogglePlayMode'
-        QtMocHelpers::SlotData<void()>(18, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onLyricOffsetPlus'
+        QtMocHelpers::SlotData<void()>(20, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onLyricOffsetMinus'
+        QtMocHelpers::SlotData<void()>(21, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onTogglePanel'
+        QtMocHelpers::SlotData<void()>(22, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onSearchTextChanged'
+        QtMocHelpers::SlotData<void(const QString &)>(23, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 24 },
+        }}),
+        // Slot 'onLyricScrollChanged'
+        QtMocHelpers::SlotData<void(int)>(25, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 26 },
+        }}),
+        // Slot 'onLyricJump'
+        QtMocHelpers::SlotData<void()>(27, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'refreshPlayPauseBtn'
-        QtMocHelpers::SlotData<void(Player::State)>(19, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { 0x80000000 | 20, 21 },
+        QtMocHelpers::SlotData<void(Player::State)>(28, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 29, 30 },
         }}),
         // Slot 'refreshTimeLabel'
-        QtMocHelpers::SlotData<void(qint64)>(22, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::LongLong, 23 },
+        QtMocHelpers::SlotData<void(qint64)>(31, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::LongLong, 32 },
         }}),
         // Slot 'refreshProgressRange'
-        QtMocHelpers::SlotData<void(qint64)>(24, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::LongLong, 25 },
+        QtMocHelpers::SlotData<void(qint64)>(33, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::LongLong, 34 },
         }}),
         // Slot 'refreshCurrentRow'
-        QtMocHelpers::SlotData<void(int)>(26, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::Int, 10 },
+        QtMocHelpers::SlotData<void(int)>(35, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 11 },
         }}),
         // Slot 'onTrackEnded'
-        QtMocHelpers::SlotData<void()>(27, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(36, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onPlayerError'
-        QtMocHelpers::SlotData<void(const QString &)>(28, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::QString, 29 },
+        QtMocHelpers::SlotData<void(const QString &)>(37, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 38 },
+        }}),
+        // Slot 'onMetaDataReady'
+        QtMocHelpers::SlotData<void(const QString &, const QString &, const QString &)>(39, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 40 }, { QMetaType::QString, 41 }, { QMetaType::QString, 42 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -148,21 +183,29 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->onOpenFiles(); break;
         case 1: _t->onScanFolder(); break;
-        case 2: _t->onPlayPause(); break;
-        case 3: _t->onStop(); break;
-        case 4: _t->onNext(); break;
-        case 5: _t->onPrevious(); break;
-        case 6: _t->onPlaylistDoubleClicked((*reinterpret_cast<std::add_pointer_t<QModelIndex>>(_a[1]))); break;
-        case 7: _t->onPlaylistContextMenu((*reinterpret_cast<std::add_pointer_t<QPoint>>(_a[1]))); break;
-        case 8: _t->onSeek((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 9: _t->onVolumeChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 10: _t->onTogglePlayMode(); break;
-        case 11: _t->refreshPlayPauseBtn((*reinterpret_cast<std::add_pointer_t<Player::State>>(_a[1]))); break;
-        case 12: _t->refreshTimeLabel((*reinterpret_cast<std::add_pointer_t<qint64>>(_a[1]))); break;
-        case 13: _t->refreshProgressRange((*reinterpret_cast<std::add_pointer_t<qint64>>(_a[1]))); break;
-        case 14: _t->refreshCurrentRow((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 15: _t->onTrackEnded(); break;
-        case 16: _t->onPlayerError((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->onClearAll(); break;
+        case 3: _t->onPlayPause(); break;
+        case 4: _t->onStop(); break;
+        case 5: _t->onNext(); break;
+        case 6: _t->onPrevious(); break;
+        case 7: _t->onPlaylistDoubleClicked((*reinterpret_cast<std::add_pointer_t<QModelIndex>>(_a[1]))); break;
+        case 8: _t->onPlaylistContextMenu((*reinterpret_cast<std::add_pointer_t<QPoint>>(_a[1]))); break;
+        case 9: _t->onSeek((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 10: _t->onVolumeChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 11: _t->onTogglePlayMode(); break;
+        case 12: _t->onLyricOffsetPlus(); break;
+        case 13: _t->onLyricOffsetMinus(); break;
+        case 14: _t->onTogglePanel(); break;
+        case 15: _t->onSearchTextChanged((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 16: _t->onLyricScrollChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 17: _t->onLyricJump(); break;
+        case 18: _t->refreshPlayPauseBtn((*reinterpret_cast<std::add_pointer_t<Player::State>>(_a[1]))); break;
+        case 19: _t->refreshTimeLabel((*reinterpret_cast<std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 20: _t->refreshProgressRange((*reinterpret_cast<std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 21: _t->refreshCurrentRow((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 22: _t->onTrackEnded(); break;
+        case 23: _t->onPlayerError((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 24: _t->onMetaDataReady((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3]))); break;
         default: ;
         }
     }
@@ -187,14 +230,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 17)
+        if (_id < 25)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 17;
+        _id -= 25;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 17)
+        if (_id < 25)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 17;
+        _id -= 25;
     }
     return _id;
 }

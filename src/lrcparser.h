@@ -17,8 +17,8 @@ public:
     bool isEmpty() const { return m_lines.isEmpty(); }
     const QList<Line> &lines() const { return m_lines; }
 
-    /// 根据播放位置（毫秒）返回歌词行索引，未找到返回 -1
-    int lineAt(qint64 positionMs) const;
+    /// 根据播放位置（毫秒）+ 偏移量返回歌词行索引，未找到返回 -1
+    int lineAt(qint64 positionMs, qint64 offsetMs = 0) const;
 
 private:
     qint64 parseTimestamp(const QStringView s) const;

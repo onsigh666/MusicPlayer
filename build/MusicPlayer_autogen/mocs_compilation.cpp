@@ -4,3 +4,4 @@
 #include "UVLADIE3JM/moc_mainwindow.cpp"
 #include "UVLADIE3JM/moc_player.cpp"
 #include "UVLADIE3JM/moc_playlist.cpp"
+#include "UVLADIE3JM/moc_transcoder.cpp"

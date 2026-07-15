@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/GithubRemoteRepository/MusicPlayer/src/mainwindow.cpp" "CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj.d"
   "D:/GithubRemoteRepository/MusicPlayer/src/player.cpp" "CMakeFiles/MusicPlayer.dir/src/player.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/src/player.cpp.obj.d"
   "D:/GithubRemoteRepository/MusicPlayer/src/playlist.cpp" "CMakeFiles/MusicPlayer.dir/src/playlist.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/src/playlist.cpp.obj.d"
+  "D:/GithubRemoteRepository/MusicPlayer/src/transcoder.cpp" "CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

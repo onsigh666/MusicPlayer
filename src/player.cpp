@@ -1,6 +1,7 @@
 #include "player.h"
 
 #include <QAudioOutput>
+#include <QMediaMetaData>
 #include <QMediaPlayer>
 
 Player::Player(QObject *parent) : QObject(parent) {
@@ -26,6 +27,13 @@ Player::Player(QObject *parent) : QObject(parent) {
     });
     connect(m_player, &QMediaPlayer::errorOccurred, this, [this](QMediaPlayer::Error, const QString &msg) {
         emit errorOccurred(msg);
+    });
+    connect(m_player, &QMediaPlayer::metaDataChanged, this, [this]() {
+        auto md = m_player->metaData();
+        emit metaDataReady(
+            md.stringValue(QMediaMetaData::Title),
+            md.stringValue(QMediaMetaData::ContributingArtist),
+            md.stringValue(QMediaMetaData::AlbumTitle));
     });
 }
 

@@ -2284,6 +2284,8 @@ CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj: D:/GithubRemoteRepository/Mus
   D:/Qt/6.11.1/mingw_64/include/QtCore/qxptype_traits.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qyieldcpu.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/QFont \
+  D:/Qt/6.11.1/mingw_64/include/QtGui/QPainter \
+  D:/Qt/6.11.1/mingw_64/include/QtGui/QPolygonF \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qaction.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qbitmap.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qbrush.h \
@@ -2300,7 +2302,9 @@ CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj: D:/GithubRemoteRepository/Mus
   D:/Qt/6.11.1/mingw_64/include/QtGui/qinputmethod.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qkeysequence.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qpaintdevice.h \
+  D:/Qt/6.11.1/mingw_64/include/QtGui/qpainter.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qpalette.h \
+  D:/Qt/6.11.1/mingw_64/include/QtGui/qpen.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qpicture.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qpixelformat.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qpixmap.h \
@@ -2308,7 +2312,10 @@ CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj: D:/GithubRemoteRepository/Mus
   D:/Qt/6.11.1/mingw_64/include/QtGui/qregion.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qrgb.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qrgba64.h \
+  D:/Qt/6.11.1/mingw_64/include/QtGui/qtextcursor.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qtextdocument.h \
+  D:/Qt/6.11.1/mingw_64/include/QtGui/qtextformat.h \
+  D:/Qt/6.11.1/mingw_64/include/QtGui/qtextoption.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qtgui-config.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qtguiexports.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qtguiglobal.h \
@@ -2320,12 +2327,15 @@ CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj: D:/GithubRemoteRepository/Mus
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QFileDialog \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QHBoxLayout \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QLabel \
+  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QLineEdit \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QListWidget \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QMenu \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QMessageBox \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QPushButton \
+  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QScrollBar \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QSlider \
+  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QStackedWidget \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QVBoxLayout \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractbutton.h \
@@ -2344,6 +2354,7 @@ CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj: D:/GithubRemoteRepository/Mus
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlabel.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlayout.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlineedit.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlistview.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlistwidget.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -2351,8 +2362,10 @@ CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj: D:/GithubRemoteRepository/Mus
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qmessagebox.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qpushbutton.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qrubberband.h \
+  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qscrollbar.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qslider.h \
+  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qstackedwidget.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qstyle.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qstyleoption.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabbar.h \
@@ -2630,8 +2643,11 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/6.11.1/mingw_64/include/QtCore/q20iterator.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/q20memory.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/q20type_traits.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/q20utility.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/q23type_traits.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/q23utility.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qalgorithms.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qalloc.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qanystringview.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qarraydata.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qarraydataops.h \
@@ -2655,8 +2671,10 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/6.11.1/mingw_64/include/QtCore/qcontainerfwd.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qcontainerinfo.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qcontainertools_impl.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qcontiguouscache.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qdatastream.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qdebug.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qflags.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qfloat16.h \
@@ -2666,6 +2684,7 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/6.11.1/mingw_64/include/QtCore/qgenericatomic.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qglobal.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qglobalstatic.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qhash.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qhashfunctions.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qiodevicebase.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qiterable.h \
@@ -2674,6 +2693,7 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/6.11.1/mingw_64/include/QtCore/qlist.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qlogging.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qmalloc.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qmap.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qmath.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qmetacontainer.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qmetatype.h \
@@ -2690,6 +2710,11 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/6.11.1/mingw_64/include/QtCore/qrefcount.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qscopedpointer.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qscopeguard.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qset.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qshareddata.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qshareddata_impl.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qsharedpointer.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qsharedpointer_impl.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qspan.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qstdlibdetection.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qstring.h \
@@ -2715,6 +2740,7 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/6.11.1/mingw_64/include/QtCore/qtdeprecationdefinitions.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qtextstream.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qtformat_impl.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qtmetamacros.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qtnoop.h \
@@ -2728,6 +2754,8 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/6.11.1/mingw_64/include/QtCore/qtypes.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qurl.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qutf8stringview.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qvariant.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qversiontagging.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qxptype_traits.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qyieldcpu.h \
@@ -2735,9 +2763,11 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/6.11.1/mingw_64/include/QtGui/qtguiexports.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qtguiglobal.h \
   D:/Qt/6.11.1/mingw_64/include/QtMultimedia/QAudioOutput \
+  D:/Qt/6.11.1/mingw_64/include/QtMultimedia/QMediaMetaData \
   D:/Qt/6.11.1/mingw_64/include/QtMultimedia/QMediaPlayer \
   D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qaudio.h \
   D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qaudiooutput.h \
+  D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qmediametadata.h \
   D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qmediaplayer.h \
   D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtaudio.h \
   D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
@@ -2813,10 +2843,12 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_map.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
@@ -2829,6 +2861,7 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
@@ -2837,6 +2870,7 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
@@ -2874,6 +2908,7 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -2896,6 +2931,7 @@ CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: D:/GithubRemoteRepository/MusicPl
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/variant \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
@@ -3365,6 +3401,8 @@ CMakeFiles/MusicPlayer.dir/src/playlist.cpp.obj: D:/GithubRemoteRepository/Music
   D:/GithubRemoteRepository/MusicPlayer/src/track.h
 
 
+D:/Qt/6.11.1/mingw_64/include/QtWidgets/QLineEdit:
+
 D:/Qt/6.11.1/mingw_64/include/QtCore/QList:
 
 MusicPlayer_autogen/mocs_compilation.cpp:
@@ -3547,9 +3585,13 @@ D:/Qt/6.11.1/mingw_64/include/QtCore/qbytearrayalgorithms.h:
 
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/version:
 
+D:/Qt/6.11.1/mingw_64/include/QtGui/qtextformat.h:
+
 D:/Qt/6.11.1/mingw_64/include/QtCore/qbytearrayview.h:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/qchar.h:
+
+D:/Qt/6.11.1/mingw_64/include/QtWidgets/qscrollbar.h:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/qcompare_impl.h:
 
@@ -3582,6 +3624,8 @@ D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stri
 D:/Qt/6.11.1/mingw_64/include/QtCore/qdatastream.h:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/qdatetime.h:
+
+D:/Qt/6.11.1/mingw_64/include/QtGui/QPolygonF:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/qexceptionhandling.h:
 
@@ -3933,9 +3977,9 @@ MusicPlayer_autogen/UVLADIE3JM/moc_player.cpp:
 
 D:/Qt/6.11.1/mingw_64/include/QtGui/qregion.h:
 
-D:/Qt/6.11.1/mingw_64/include/QtGui/qtgui-config.h:
-
 D:/Qt/6.11.1/mingw_64/include/QtGui/qtextdocument.h:
+
+D:/Qt/6.11.1/mingw_64/include/QtGui/qtgui-config.h:
 
 D:/Qt/6.11.1/mingw_64/include/QtGui/qtguiglobal.h:
 
@@ -4255,6 +4299,8 @@ D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd:
 
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream:
 
+D:/Qt/6.11.1/mingw_64/include/QtGui/qtextcursor.h:
+
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator:
 
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits:
@@ -4308,6 +4354,8 @@ D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/speci
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map:
 
 MusicPlayer_autogen/UVLADIE3JM/moc_playlist.cpp:
+
+D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qmediametadata.h:
 
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility:
 
@@ -4443,6 +4491,10 @@ D:/Qt/6.11.1/mingw_64/include/QtWidgets/QMenu:
 
 D:/Qt/6.11.1/mingw_64/include/QtWidgets/QPushButton:
 
+D:/Qt/6.11.1/mingw_64/include/QtWidgets/QScrollBar:
+
+D:/Qt/6.11.1/mingw_64/include/QtWidgets/QStackedWidget:
+
 D:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractbutton.h:
 
 D:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h:
@@ -4459,6 +4511,8 @@ D:/Qt/6.11.1/mingw_64/include/QtWidgets/qgridlayout.h:
 
 D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlabel.h:
 
+D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlineedit.h:
+
 D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlistwidget.h:
 
 D:/Qt/6.11.1/mingw_64/include/QtWidgets/qmenu.h:
@@ -4469,6 +4523,8 @@ D:/Qt/6.11.1/mingw_64/include/QtWidgets/qrubberband.h:
 
 D:/Qt/6.11.1/mingw_64/include/QtWidgets/qslider.h:
 
+D:/Qt/6.11.1/mingw_64/include/QtWidgets/qstackedwidget.h:
+
 D:/Qt/6.11.1/mingw_64/include/QtWidgets/qstyleoption.h:
 
 D:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabbar.h:
@@ -4476,6 +4532,8 @@ D:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabbar.h:
 D:/GithubRemoteRepository/MusicPlayer/src/player.cpp:
 
 D:/Qt/6.11.1/mingw_64/include/QtMultimedia/QAudioOutput:
+
+D:/Qt/6.11.1/mingw_64/include/QtMultimedia/QMediaMetaData:
 
 D:/Qt/6.11.1/mingw_64/include/QtMultimedia/QMediaPlayer:
 

@@ -32,6 +32,8 @@ add_executable(${PROJECT_NAME}
     src/lrcparser.h
     src/discwidget.cpp
     src/discwidget.h
+    src/transcoder.cpp
+    src/transcoder.h
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE

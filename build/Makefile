@@ -346,6 +346,30 @@ src/playlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/playlist.cpp.s
 .PHONY : src/playlist.cpp.s
 
+src/transcoder.obj: src/transcoder.cpp.obj
+.PHONY : src/transcoder.obj
+
+# target to build an object file
+src/transcoder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.obj
+.PHONY : src/transcoder.cpp.obj
+
+src/transcoder.i: src/transcoder.cpp.i
+.PHONY : src/transcoder.i
+
+# target to preprocess a source file
+src/transcoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.i
+.PHONY : src/transcoder.cpp.i
+
+src/transcoder.s: src/transcoder.cpp.s
+.PHONY : src/transcoder.s
+
+# target to generate assembly for a file
+src/transcoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.s
+.PHONY : src/transcoder.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -381,6 +405,9 @@ help:
 	@echo ... src/playlist.obj
 	@echo ... src/playlist.i
 	@echo ... src/playlist.s
+	@echo ... src/transcoder.obj
+	@echo ... src/transcoder.i
+	@echo ... src/transcoder.s
 .PHONY : help
 
 

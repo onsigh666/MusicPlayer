@@ -28,7 +28,8 @@ bool Library::savePlaylist(const QString &name, const QList<Track> &tracks) cons
         obj["title"]    = t.title;
         obj["artist"]   = t.artist;
         obj["album"]    = t.album;
-        obj["duration"] = t.duration;
+        obj["duration"]    = t.duration;
+        obj["lyricOffset"] = t.lyricOffset;
         arr.append(obj);
     }
     QJsonDocument doc(arr);
@@ -55,7 +56,8 @@ QList<Track> Library::loadPlaylist(const QString &name) const {
         t.title    = obj["title"].toString();
         t.artist   = obj["artist"].toString();
         t.album    = obj["album"].toString();
-        t.duration = static_cast<qint64>(obj["duration"].toDouble());
+        t.duration    = static_cast<qint64>(obj["duration"].toDouble());
+        t.lyricOffset = static_cast<qint64>(obj["lyricOffset"].toDouble());
         tracks.append(t);
     }
     return tracks;

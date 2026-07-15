@@ -76,12 +76,7 @@ Track Playlist::next() {
     int nextIdx = m_currentIndex;
     switch (m_playMode) {
     case PlayMode::RepeatOne:
-        // 手动切歌时前进到下一首（原地循环由 onTrackEnded 处理）
-        [[fallthrough]];
-    case PlayMode::Sequential:
-        if (m_currentIndex + 1 >= m_tracks.size()) return Track(); // 不循环
-        nextIdx = m_currentIndex + 1;
-        break;
+        // 手动切歌：前进到下一首（原地循环由 onTrackEnded 处理）
     case PlayMode::Repeat:
         nextIdx = (m_currentIndex + 1) % m_tracks.size();
         break;

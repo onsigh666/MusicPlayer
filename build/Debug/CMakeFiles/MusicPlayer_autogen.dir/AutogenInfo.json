@@ -444,6 +444,12 @@
 			"MU",
 			"UVLADIE3JM/moc_playlist.cpp",
 			null
+		],
+		[
+			"D:/GithubRemoteRepository/MusicPlayer/src/transcoder.h",
+			"MU",
+			"UVLADIE3JM/moc_transcoder.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -536,7 +542,12 @@
 			null
 		],
 		[ "D:/GithubRemoteRepository/MusicPlayer/src/player.cpp", "MU", null ],
-		[ "D:/GithubRemoteRepository/MusicPlayer/src/playlist.cpp", "MU", null ]
+		[ "D:/GithubRemoteRepository/MusicPlayer/src/playlist.cpp", "MU", null ],
+		[
+			"D:/GithubRemoteRepository/MusicPlayer/src/transcoder.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

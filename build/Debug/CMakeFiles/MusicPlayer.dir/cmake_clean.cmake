@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MusicPlayer.dir/src/player.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/src/playlist.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/src/playlist.cpp.obj.d"
+  "CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.obj"
+  "CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.obj.d"
   "CMakeFiles/MusicPlayer_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/MusicPlayer_autogen.dir/ParseCache.txt"
   "MusicPlayer_autogen"

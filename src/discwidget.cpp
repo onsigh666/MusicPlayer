@@ -44,7 +44,7 @@ void DiscWidget::paintEvent(QPaintEvent *) {
 
     // 计算适合当前控件大小的光碟半径
     int side = qMin(width(), height());
-    qreal radius = side * 0.38;
+    qreal radius = side * 0.44;
     QPointF center(width() / 2.0, height() / 2.0);
 
     p.save();
@@ -57,11 +57,11 @@ void DiscWidget::paintEvent(QPaintEvent *) {
 void DiscWidget::drawDisc(QPainter &p, const QPointF &center, qreal r) {
     // ── 黑胶底色 ──
     p.setPen(Qt::NoPen);
-    p.setBrush(QColor(40, 40, 40));
+    p.setBrush(QColor(30, 30, 30));
     p.drawEllipse(center, r, r);
 
     // ── 同心纹理凹槽 ──
-    p.setPen(QPen(QColor(55, 55, 55), 0.5));
+    p.setPen(QPen(QColor(50, 50, 50), 0.5));
     p.setBrush(Qt::NoBrush);
     for (qreal rr = r * 0.32; rr < r * 0.92; rr += r * 0.025) {
         p.drawEllipse(center, rr, rr);
@@ -71,20 +71,20 @@ void DiscWidget::drawDisc(QPainter &p, const QPointF &center, qreal r) {
     p.setPen(Qt::NoPen);
     QLinearGradient grad(-r * 0.85, 0, r * 0.3, 0);
     grad.setColorAt(0.0, QColor(255, 255, 255, 0));
-    grad.setColorAt(0.48, QColor(255, 255, 255, 18));
-    grad.setColorAt(0.52, QColor(255, 255, 255, 18));
+    grad.setColorAt(0.48, QColor(255, 255, 255, 15));
+    grad.setColorAt(0.52, QColor(255, 255, 255, 15));
     grad.setColorAt(1.0, QColor(255, 255, 255, 0));
     p.setBrush(grad);
     p.drawEllipse(center, r * 0.95, r * 0.95);
 
-    // ── 中心标签 ──
+    // ── 中心标签（网易云红） ──
     qreal labelR = r * 0.3;
     p.setPen(Qt::NoPen);
-    p.setBrush(QColor(210, 195, 235)); // 浅淡紫色
+    p.setBrush(QColor(236, 65, 65)); // 网易云红 #ec4141
     p.drawEllipse(center, labelR, labelR);
 
     // 标签上的文字
-    p.setPen(QColor(255, 255, 255, 200));
+    p.setPen(QColor(255, 255, 255, 220));
     QFont font("sans-serif", labelR * 0.28);
     font.setBold(true);
     p.setFont(font);
@@ -93,6 +93,6 @@ void DiscWidget::drawDisc(QPainter &p, const QPointF &center, qreal r) {
 
     // ── 中心孔 ──
     p.setPen(Qt::NoPen);
-    p.setBrush(QColor(50, 50, 50));
+    p.setBrush(QColor(22, 22, 22));
     p.drawEllipse(center, r * 0.05, r * 0.05);
 }

@@ -450,4 +450,8 @@ CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
  D:/GithubRemoteRepository/MusicPlayer/src/player.h \
  D:\GithubRemoteRepository\MusicPlayer\build\MusicPlayer_autogen\UVLADIE3JM/moc_playlist.cpp \
  D:/GithubRemoteRepository/MusicPlayer/src/playlist.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/QList
+ D:/Qt/6.11.1/mingw_64/include/QtCore/QList \
+ D:\GithubRemoteRepository\MusicPlayer\build\MusicPlayer_autogen\UVLADIE3JM/moc_transcoder.cpp \
+ D:/GithubRemoteRepository/MusicPlayer/src/transcoder.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/QProcess \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qprocess.h

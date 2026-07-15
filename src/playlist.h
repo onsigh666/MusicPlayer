@@ -7,7 +7,7 @@
 #include <QObject>
 
 /// 播放模式
-enum class PlayMode { Sequential, Repeat, Shuffle, RepeatOne };
+enum class PlayMode { Repeat, Shuffle, RepeatOne };
 
 /// 管理一组 Track：增删、当前项、切歌、播放模式、搜索过滤
 class Playlist : public QObject {
@@ -44,7 +44,7 @@ signals:
 private:
     QList<Track> m_tracks;
     int m_currentIndex = -1;
-    PlayMode m_playMode = PlayMode::Sequential;
+    PlayMode m_playMode = PlayMode::Repeat;
     QList<int> m_history; // 播放历史，用于 previous()
 };
 
