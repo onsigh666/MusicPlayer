@@ -890,7 +890,9 @@ void MainWindow::onLyricOffsetPlus() {
   auto &t = const_cast<Track &>(m_playlist->currentTrack());
   t.lyricOffset += 500; // +0.5s → ms
   m_lyricOffsetLabel->setText(
-      QString("+%1s").arg(t.lyricOffset / 1000.0, 0, 'f', 1));
+      QString("%1%2s")
+          .arg(t.lyricOffset >= 0 ? "+" : "")
+          .arg(t.lyricOffset / 1000.0, 0, 'f', 1));
   saveLyricOffset();
 }
 
