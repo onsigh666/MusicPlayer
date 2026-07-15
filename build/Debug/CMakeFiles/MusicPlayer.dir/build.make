@@ -237,6 +237,7 @@ MusicPlayer.exe: D:/Qt/6.11.1/mingw_64/lib/libQt6Multimedia.a
 MusicPlayer.exe: D:/Qt/6.11.1/mingw_64/lib/libQt6Gui.a
 MusicPlayer.exe: D:/Qt/6.11.1/mingw_64/lib/libQt6Network.a
 MusicPlayer.exe: D:/Qt/6.11.1/mingw_64/lib/libQt6Core.a
+MusicPlayer.exe: D:/Qt/6.11.1/mingw_64/lib/libQt6EntryPoint.a
 MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/linkLibs.rsp
 MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/objects1.rsp
 MusicPlayer.exe: CMakeFiles/MusicPlayer.dir/link.txt

@@ -1,55 +1,55 @@
 [
 {
   "directory": "D:/GithubRemoteRepository/MusicPlayer/build/Debug",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\MusicPlayer_autogen\\mocs_compilation.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\build\\Debug\\MusicPlayer_autogen\\mocs_compilation.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\MusicPlayer_autogen\\mocs_compilation.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\build\\Debug\\MusicPlayer_autogen\\mocs_compilation.cpp",
   "file": "D:/GithubRemoteRepository/MusicPlayer/build/Debug/MusicPlayer_autogen/mocs_compilation.cpp",
   "output": "CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj"
 },
 {
   "directory": "D:/GithubRemoteRepository/MusicPlayer/build/Debug",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\main.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\main.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\main.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\main.cpp",
   "file": "D:/GithubRemoteRepository/MusicPlayer/src/main.cpp",
   "output": "CMakeFiles/MusicPlayer.dir/src/main.cpp.obj"
 },
 {
   "directory": "D:/GithubRemoteRepository/MusicPlayer/build/Debug",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\mainwindow.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\mainwindow.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\mainwindow.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\mainwindow.cpp",
   "file": "D:/GithubRemoteRepository/MusicPlayer/src/mainwindow.cpp",
   "output": "CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj"
 },
 {
   "directory": "D:/GithubRemoteRepository/MusicPlayer/build/Debug",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\player.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\player.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\player.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\player.cpp",
   "file": "D:/GithubRemoteRepository/MusicPlayer/src/player.cpp",
   "output": "CMakeFiles/MusicPlayer.dir/src/player.cpp.obj"
 },
 {
   "directory": "D:/GithubRemoteRepository/MusicPlayer/build/Debug",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\playlist.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\playlist.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\playlist.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\playlist.cpp",
   "file": "D:/GithubRemoteRepository/MusicPlayer/src/playlist.cpp",
   "output": "CMakeFiles/MusicPlayer.dir/src/playlist.cpp.obj"
 },
 {
   "directory": "D:/GithubRemoteRepository/MusicPlayer/build/Debug",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\library.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\library.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\library.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\library.cpp",
   "file": "D:/GithubRemoteRepository/MusicPlayer/src/library.cpp",
   "output": "CMakeFiles/MusicPlayer.dir/src/library.cpp.obj"
 },
 {
   "directory": "D:/GithubRemoteRepository/MusicPlayer/build/Debug",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\lrcparser.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\lrcparser.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\lrcparser.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\lrcparser.cpp",
   "file": "D:/GithubRemoteRepository/MusicPlayer/src/lrcparser.cpp",
   "output": "CMakeFiles/MusicPlayer.dir/src/lrcparser.cpp.obj"
 },
 {
   "directory": "D:/GithubRemoteRepository/MusicPlayer/build/Debug",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\discwidget.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\discwidget.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\discwidget.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\discwidget.cpp",
   "file": "D:/GithubRemoteRepository/MusicPlayer/src/discwidget.cpp",
   "output": "CMakeFiles/MusicPlayer.dir/src/discwidget.cpp.obj"
 },
 {
   "directory": "D:/GithubRemoteRepository/MusicPlayer/build/Debug",
-  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\transcoder.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\transcoder.cpp",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\transcoder.cpp.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\src\\transcoder.cpp",
   "file": "D:/GithubRemoteRepository/MusicPlayer/src/transcoder.cpp",
   "output": "CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.obj"
 }

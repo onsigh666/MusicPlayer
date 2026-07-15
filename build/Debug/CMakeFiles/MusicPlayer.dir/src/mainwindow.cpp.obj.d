@@ -461,11 +461,6 @@ CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj: \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qfiledialog.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qurl.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
- D:/Qt/6.11.1/mingw_64/include/QtGui/QPainter \
- D:/Qt/6.11.1/mingw_64/include/QtGui/qpainter.h \
- D:/Qt/6.11.1/mingw_64/include/QtGui/qtextoption.h \
- D:/Qt/6.11.1/mingw_64/include/QtGui/qpen.h \
- D:/Qt/6.11.1/mingw_64/include/QtGui/QPolygonF \
  D:/Qt/6.11.1/mingw_64/include/QtGui/QFont \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qboxlayout.h \
@@ -481,6 +476,8 @@ CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj: \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlineedit.h \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qtextcursor.h \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qtextformat.h \
+ D:/Qt/6.11.1/mingw_64/include/QtGui/qpen.h \
+ D:/Qt/6.11.1/mingw_64/include/QtGui/qtextoption.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QListWidget \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlistwidget.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qlistview.h \
@@ -503,6 +500,9 @@ CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj: \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QMessageBox \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ D:/Qt/6.11.1/mingw_64/include/QtGui/QPainter \
+ D:/Qt/6.11.1/mingw_64/include/QtGui/qpainter.h \
+ D:/Qt/6.11.1/mingw_64/include/QtGui/QPolygonF \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QProgressDialog \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qprogressdialog.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QPushButton \

@@ -18,7 +18,7 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Core Gui Widgets Multimedia MultimediaW
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Gui Widgets Multimedia MultimediaWidgets REQUIRED)
 
 # 可执行文件
-add_executable(${PROJECT_NAME}
+add_executable(${PROJECT_NAME} WIN32
     src/main.cpp
     src/mainwindow.cpp
     src/mainwindow.h
@@ -42,4 +42,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Multimedia
     Qt${QT_VERSION_MAJOR}::MultimediaWidgets
+    dwmapi
 )

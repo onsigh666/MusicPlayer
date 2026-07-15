@@ -60,9 +60,12 @@ D:/GithubRemoteRepository/MusicPlayer/build/Debug/MusicPlayer_autogen/timestamp
  D:/GithubRemoteRepository/MusicPlayer/src/playlist.cpp
  D:/GithubRemoteRepository/MusicPlayer/src/playlist.h
  D:/GithubRemoteRepository/MusicPlayer/src/track.h
+ D:/GithubRemoteRepository/MusicPlayer/src/transcoder.cpp
+ D:/GithubRemoteRepository/MusicPlayer/src/transcoder.h
  D:/Qt/6.11.1/mingw_64/include/QtCore/QFileInfo
  D:/Qt/6.11.1/mingw_64/include/QtCore/QList
  D:/Qt/6.11.1/mingw_64/include/QtCore/QObject
+ D:/Qt/6.11.1/mingw_64/include/QtCore/QProcess
  D:/Qt/6.11.1/mingw_64/include/QtCore/QString
  D:/Qt/6.11.1/mingw_64/include/QtCore/QTimer
  D:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h
@@ -150,6 +153,7 @@ D:/GithubRemoteRepository/MusicPlayer/build/Debug/MusicPlayer_autogen/timestamp
  D:/Qt/6.11.1/mingw_64/include/QtCore/qoverload.h
  D:/Qt/6.11.1/mingw_64/include/QtCore/qpair.h
  D:/Qt/6.11.1/mingw_64/include/QtCore/qpoint.h
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qprocess.h
  D:/Qt/6.11.1/mingw_64/include/QtCore/qprocessordetection.h
  D:/Qt/6.11.1/mingw_64/include/QtCore/qrect.h
  D:/Qt/6.11.1/mingw_64/include/QtCore/qrefcount.h

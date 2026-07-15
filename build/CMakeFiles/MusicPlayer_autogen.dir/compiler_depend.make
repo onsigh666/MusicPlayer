@@ -59,9 +59,12 @@ MusicPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   D:/GithubRemoteRepository/MusicPlayer/src/playlist.cpp \
   D:/GithubRemoteRepository/MusicPlayer/src/playlist.h \
   D:/GithubRemoteRepository/MusicPlayer/src/track.h \
+  D:/GithubRemoteRepository/MusicPlayer/src/transcoder.cpp \
+  D:/GithubRemoteRepository/MusicPlayer/src/transcoder.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QFileInfo \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QList \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/QProcess \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QString \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QTimer \
   D:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
@@ -149,6 +152,7 @@ MusicPlayer_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qoverload.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qpair.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qpoint.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qprocess.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qprocessordetection.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qrect.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qrefcount.h \
@@ -828,14 +832,6 @@ D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.4/Modules/CheckIncludeFileCXX.cmake:
 
-D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h:
-
-D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h:
-
-D:/GithubRemoteRepository/MusicPlayer/src/playlist.cpp:
-
-D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake:
-
 C:/Program\ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU.cmake:
 
 D:/Qt/6.11.1/mingw_64/include/QtGui/qtransform.h:
@@ -843,6 +839,18 @@ D:/Qt/6.11.1/mingw_64/include/QtGui/qtransform.h:
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
 
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/algorithmfwd.h:
+
+D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:
+
+D:/GithubRemoteRepository/MusicPlayer/src/transcoder.h:
+
+D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h:
+
+D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h:
+
+D:/GithubRemoteRepository/MusicPlayer/src/playlist.cpp:
+
+D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.4/Modules/FindPackageMessage.cmake:
 
@@ -944,6 +952,8 @@ D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
 
 D:/GithubRemoteRepository/MusicPlayer/src/mainwindow.cpp:
 
+D:/GithubRemoteRepository/MusicPlayer/src/transcoder.cpp:
+
 D:/Qt/6.11.1/mingw_64/include/QtCore/QFileInfo:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/QObject:
@@ -951,6 +961,10 @@ D:/Qt/6.11.1/mingw_64/include/QtCore/QObject:
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets.cmake:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/qatomic_cxx11.h:
+
+D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake:
+
+D:/Qt/6.11.1/mingw_64/include/QtCore/QProcess:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/QString:
 
@@ -1132,8 +1146,6 @@ D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/qfile.h:
 
-D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h:
-
 D:/Qt/6.11.1/mingw_64/include/QtCore/qfileinfo.h:
 
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaMacros.cmake:
@@ -1152,9 +1164,9 @@ D:/Qt/6.11.1/mingw_64/include/QtCore/qgenericatomic.h:
 
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake:
 
-D:/Qt/6.11.1/mingw_64/include/QtCore/qglobalstatic.h:
-
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h:
+
+D:/Qt/6.11.1/mingw_64/include/QtCore/qglobalstatic.h:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/qhashfunctions.h:
 
@@ -1247,6 +1259,12 @@ D:/Qt/6.11.1/mingw_64/include/QtCore/qtcore-config.h:
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/qpoint.h:
+
+D:/Qt/6.11.1/mingw_64/include/QtCore/qprocess.h:
+
+D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake:
+
+D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake:
 
 D:/Qt/6.11.1/mingw_64/include/QtCore/qprocessordetection.h:
 
@@ -1712,8 +1730,6 @@ D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake:
 
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake:
 
-D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake:
-
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake:
 
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake:
@@ -1782,10 +1798,6 @@ D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTarge
 
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake:
 
-D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake:
-
-D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake:
-
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/alloc_traits.h:
 
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake:
@@ -1805,8 +1817,6 @@ D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake:
 
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaAdditionalTargetInfo.cmake:
-
-D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h:
 
 D:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets-relwithdebinfo.cmake:
 
@@ -1902,6 +1912,10 @@ D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/eras
 
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h:
 
+D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h:
+
+D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h:
+
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h:
 
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h:
@@ -1963,8 +1977,6 @@ D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath:
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h:
 
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h:
-
-D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:
 
 D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multimap.h:
 

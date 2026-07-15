@@ -57,11 +57,11 @@ void DiscWidget::paintEvent(QPaintEvent *) {
 void DiscWidget::drawDisc(QPainter &p, const QPointF &center, qreal r) {
     // ── 黑胶底色 ──
     p.setPen(Qt::NoPen);
-    p.setBrush(QColor(30, 30, 30));
+    p.setBrush(QColor(55, 55, 55));
     p.drawEllipse(center, r, r);
 
     // ── 同心纹理凹槽 ──
-    p.setPen(QPen(QColor(50, 50, 50), 0.5));
+    p.setPen(QPen(QColor(75, 75, 75), 0.5));
     p.setBrush(Qt::NoBrush);
     for (qreal rr = r * 0.32; rr < r * 0.92; rr += r * 0.025) {
         p.drawEllipse(center, rr, rr);
@@ -93,6 +93,6 @@ void DiscWidget::drawDisc(QPainter &p, const QPointF &center, qreal r) {
 
     // ── 中心孔 ──
     p.setPen(Qt::NoPen);
-    p.setBrush(QColor(22, 22, 22));
+    p.setBrush(QColor(30, 30, 30));
     p.drawEllipse(center, r * 0.05, r * 0.05);
 }

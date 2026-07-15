@@ -9,8 +9,6 @@
 #include <QApplication>
 #include <QDirIterator>
 #include <QFileDialog>
-#include <QPainter>
-#include <QPolygonF>
 #include <QFileInfo>
 #include <QFont>
 #include <QHBoxLayout>
@@ -19,6 +17,8 @@
 #include <QListWidget>
 #include <QMenu>
 #include <QMessageBox>
+#include <QPainter>
+#include <QPolygonF>
 #include <QProgressDialog>
 #include <QPushButton>
 #include <QScrollBar>
@@ -41,8 +41,7 @@ protected:
     p.setPen(Qt::NoPen);
     qreal w = width(), h = height();
     QPolygonF tri;
-    tri << QPointF(w * 0.15, h * 0.2)
-        << QPointF(w * 0.85, h * 0.5)
+    tri << QPointF(w * 0.15, h * 0.2) << QPointF(w * 0.85, h * 0.5)
         << QPointF(w * 0.15, h * 0.8);
     p.drawPolygon(tri);
   }
@@ -69,17 +68,72 @@ MainWindow::~MainWindow() = default;
 // ─────────────────────── UI 构建 ───────────────────────
 
 void MainWindow::setupUI() {
+  // 主窗口自身也设为深色底，防止露出白色
+  setStyleSheet("QMainWindow { background: #121212; }");
+
   auto *central = new QWidget(this);
-  // 网易云风格黑底
-  central->setStyleSheet("background: #161616;");
+  central->setStyleSheet(QLatin1String(
+      // ── 背景 ──
+      "QWidget { background: #121212; }"
+      // ── 通用按钮 ──
+      "QPushButton {"
+      " border: 1px solid #ec4141; border-radius: 10px;"
+      " padding: 5px 12px; background: #282828;"
+      " color: #e0e0e0; font-size: 13px; }"
+      "QPushButton:hover { background: #383838; }"
+      "QPushButton:pressed { background: #1e1e1e; }"
+      "QPushButton:focus { outline: none; }"
+      // ── 输入框 ──
+      "QLineEdit {"
+      " border: 1px solid #ec4141; border-radius: 10px;"
+      " padding: 6px 10px; background: #1c1c1c;"
+      " color: #e0e0e0; font-size: 13px;"
+      " selection-background-color: #ec4141; }"
+      "QLineEdit:focus { border-color: #ff5252; }"
+      // ── 列表 ──
+      "QListWidget {"
+      " background: #1c1c1c; border: 1px solid #ec4141;"
+      " border-radius: 10px; padding: 4px; outline: none;"
+      " color: #b0b0b0; }"
+      "QListWidget::item { border-radius: 6px; padding: 5px 8px; }"
+      "QListWidget::item:hover { background: #2a2a2a; }"
+      "QListWidget::item:selected { background: #333; }"
+      // ── 标签 ──
+      "QLabel { background: transparent; color: #b0b0b0; }"
+      // ── 滑块 ──
+      "QSlider::groove:horizontal {"
+      " background: #3a3a3a; height: 6px; border-radius: 3px;"
+      " border: 1px solid #ec4141; }"
+      "QSlider::sub-page:horizontal {"
+      " background: #ec4141; border-radius: 3px; }"
+      "QSlider::handle:horizontal {"
+      " background: #ec4141; width: 14px; height: 14px;"
+      " margin: -5px 0; border-radius: 7px;"
+      " border: 1px solid #cc0000; }"
+      "QSlider::handle:horizontal:hover { background: #ff5252; }"
+      // ── 滚动条 ──
+      "QScrollBar:vertical {"
+      " background: transparent; width: 6px; margin: 0; }"
+      "QScrollBar::handle:vertical {"
+      " background: #ec4141; border-radius: 3px; min-height: 30px; }"
+      "QScrollBar::handle:vertical:hover { background: #ff5252; }"
+      "QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: "
+      "0; }"
+      "QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { "
+      "background: transparent; }"
+      "QScrollBar:horizontal { height: 0; }"
+      // ── 进度条 ──
+      "QProgressBar {"
+      " border: 1px solid #ec4141; border-radius: 6px; background: #333;"
+      " height: 8px; text-align: center; }"
+      "QProgressBar::chunk { background: #ec4141; border-radius: 4px; }"));
   auto *mainLayout = new QVBoxLayout(central);
 
   // 歌曲标题
   m_titleLabel = new QLabel("未在播放", central);
   m_titleLabel->setAlignment(Qt::AlignCenter);
   m_titleLabel->setStyleSheet(
-      "font-size: 16px; font-weight: bold; margin: 8px; color: #e5e5e5;"
-      "background: transparent;");
+      "font-size: 16px; font-weight: bold; margin: 8px; color: #f0f0f0;");
   mainLayout->addWidget(m_titleLabel);
 
   // 中间区域：左侧曲库列表 (1/3) + 右侧面板 (2/3)
@@ -94,27 +148,14 @@ void MainWindow::setupUI() {
   m_searchBox = new QLineEdit(leftPanel);
   m_searchBox->setPlaceholderText("搜索歌曲...");
   m_searchBox->setClearButtonEnabled(true);
-  m_searchBox->setStyleSheet(
-      "QLineEdit { border-radius: 6px; padding: 4px 8px;"
-      "border: 1px solid #444; color: #ccc; background: #1e1e1e; }"
-      "QLineEdit:focus { border-color: #ec4141; }");
   leftLayout->addWidget(m_searchBox);
 
   m_playlistWidget = new QListWidget(leftPanel);
   m_playlistWidget->setMinimumWidth(180);
   m_playlistWidget->setContextMenuPolicy(Qt::CustomContextMenu);
-  m_playlistWidget->setStyleSheet(
-      "QListWidget { border-radius: 8px; border: 1px solid #333;"
-      " background: #1e1e1e; color: #c0c0c0; }"
-      "QListWidget::item { padding: 2px 4px; }"
-      "QListWidget::item:hover { background: #2a2a2a; }");
   leftLayout->addWidget(m_playlistWidget, 1);
 
-  auto *clearBtn = new QPushButton("🗑 一键清空", leftPanel);
-  clearBtn->setStyleSheet(
-      "border-radius: 6px; padding: 4px;"
-      "border: 1px solid #444; color: #aaa;"
-      "background: #252525;");
+  auto *clearBtn = new QPushButton("清空列表", leftPanel);
   connect(clearBtn, &QPushButton::clicked, this, &MainWindow::onClearAll);
   leftLayout->addWidget(clearBtn);
 
@@ -122,16 +163,17 @@ void MainWindow::setupUI() {
 
   // 右侧面板：光碟 / 歌词双层切换
   m_rightPanel = new QWidget(central);
-  m_rightPanel->setStyleSheet("background: #1e1e1e; border-radius: 8px;");
+  m_rightPanel->setStyleSheet(
+      "background: #1e1e1e; border: 1px solid #ec4141; border-radius: 10px;");
   auto *rightLayout = new QVBoxLayout(m_rightPanel);
 
   // 歌曲信息（标签元数据）
   m_infoArtist = new QLabel(m_rightPanel);
   m_infoArtist->setAlignment(Qt::AlignCenter);
-  m_infoArtist->setStyleSheet("font-size: 13px; color: #ccc; background: transparent;");
+  m_infoArtist->setStyleSheet("font-size: 13px; color: #e0e0e0;");
   m_infoAlbum = new QLabel(m_rightPanel);
   m_infoAlbum->setAlignment(Qt::AlignCenter);
-  m_infoAlbum->setStyleSheet("font-size: 12px; color: #888; background: transparent;");
+  m_infoAlbum->setStyleSheet("font-size: 12px; color: #888;");
   rightLayout->addWidget(m_infoArtist);
   rightLayout->addWidget(m_infoAlbum);
 
@@ -156,28 +198,22 @@ void MainWindow::setupUI() {
 
   m_lyricWidget = new QListWidget(m_lyricPage);
   m_lyricWidget->setStyleSheet(
-      "QListWidget { border: none; background: transparent; font-size: 13px;"
-      " color: #999; }"
-      "QListWidget::item { padding: 3px 6px; }");
+      "QListWidget { border: none; background: transparent;"
+      " font-size: 13px; color: #999; }"
+      "QListWidget::item { padding: 3px 6px; border-radius: 6px; }");
   m_lyricWidget->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
   m_lyricWidget->setVerticalScrollMode(QAbstractItemView::ScrollPerPixel);
   lyricPageLayout->addWidget(m_lyricWidget, 1);
 
   // 歌词偏移微调
   auto *lyricOffsetLayout = new QHBoxLayout;
-  m_lyricMinusBtn = new QPushButton("−0.5s", m_lyricPage);
-  m_lyricMinusBtn->setFixedSize(48, 26);
-  m_lyricMinusBtn->setStyleSheet(
-      "border-radius: 4px; font-size: 11px; color: #aaa;"
-      "border: 1px solid #444; background: #2a2a2a;");
+  m_lyricMinusBtn = new QPushButton("-0.5s", m_lyricPage);
+  m_lyricMinusBtn->setFixedSize(60, 28);
   m_lyricPlusBtn = new QPushButton("+0.5s", m_lyricPage);
-  m_lyricPlusBtn->setFixedSize(48, 26);
-  m_lyricPlusBtn->setStyleSheet(
-      "border-radius: 4px; font-size: 11px; color: #aaa;"
-      "border: 1px solid #444; background: #2a2a2a;");
+  m_lyricPlusBtn->setFixedSize(60, 28);
   m_lyricOffsetLabel = new QLabel("0.0s", m_lyricPage);
   m_lyricOffsetLabel->setAlignment(Qt::AlignCenter);
-  m_lyricOffsetLabel->setStyleSheet("font-size: 12px; color: #888; background: transparent;");
+  m_lyricOffsetLabel->setStyleSheet("color: #888; font-size: 12px;");
   lyricOffsetLayout->addWidget(m_lyricMinusBtn);
   lyricOffsetLayout->addStretch();
   lyricOffsetLayout->addWidget(m_lyricOffsetLabel);
@@ -190,7 +226,6 @@ void MainWindow::setupUI() {
   m_lyricJumpBtn->setFixedSize(18, 14);
   m_lyricJumpBtn->setCursor(Qt::PointingHandCursor);
   m_lyricJumpBtn->setToolTip("跳转到此处播放");
-  m_lyricJumpBtn->setStyleSheet("border: none; background: transparent;");
   m_lyricJumpBtn->hide();
 
   // 3 秒自动回弹定时器
@@ -209,11 +244,7 @@ void MainWindow::setupUI() {
   // 切换按钮（右下角）
   auto *toggleRow = new QHBoxLayout;
   toggleRow->addStretch();
-  m_toggleBtn = new QPushButton("📝 歌词", m_rightPanel);
-  m_toggleBtn->setStyleSheet(
-      "border-radius: 6px; padding: 3px 8px; font-size: 11px;"
-      "border: 1px solid #444; color: #aaa;"
-      "background: #2a2a2a;");
+  m_toggleBtn = new QPushButton("歌词", m_rightPanel);
   toggleRow->addWidget(m_toggleBtn);
   rightLayout->addLayout(toggleRow);
 
@@ -225,17 +256,8 @@ void MainWindow::setupUI() {
   auto *progressLayout = new QHBoxLayout;
   m_progressSlider = new QSlider(Qt::Horizontal, central);
   m_progressSlider->setEnabled(false);
-  m_progressSlider->setStyleSheet(
-      "QSlider::groove:horizontal { background: #333; height: 4px;"
-      " border-radius: 2px; }"
-      "QSlider::sub-page:horizontal { background: #ec4141;"
-      " border-radius: 2px; }"
-      "QSlider::handle:horizontal { background: #ec4141; width: 12px;"
-      " margin: -4px 0; border-radius: 6px; }"
-      "QSlider::handle:horizontal:hover { background: #ff5252; }");
   m_timeLabel = new QLabel("00:00 / 00:00", central);
-  m_timeLabel->setStyleSheet("color: #999; background: transparent;"
-                              " font-size: 12px;");
+  m_timeLabel->setStyleSheet("color: #888; font-size: 12px;");
   progressLayout->addWidget(m_progressSlider, 1);
   progressLayout->addWidget(m_timeLabel);
   mainLayout->addLayout(progressLayout);
@@ -243,50 +265,56 @@ void MainWindow::setupUI() {
   // 控制栏
   auto *controlLayout = new QHBoxLayout;
 
+  // 用 Segoe UI Symbol 字体 — 文字符号而非 emoji，CSS 颜色才生效
   m_prevBtn = new QPushButton("⏮", central);
   m_playBtn = new QPushButton("▶", central);
   m_stopBtn = new QPushButton("⏹", central);
   m_nextBtn = new QPushButton("⏭", central);
-  m_modeBtn = new QPushButton("🔁", central);
+  m_modeBtn = new QPushButton("↻", central);
 
-  for (auto *btn : {m_prevBtn, m_playBtn, m_stopBtn, m_nextBtn, m_modeBtn}) {
-    btn->setFixedSize(44, 44);
+  // 播放按钮 — 红色圆形
+  m_playBtn->setFixedSize(48, 48);
+  m_playBtn->setStyleSheet(
+      "QPushButton { font-family: \"Segoe UI Symbol\"; font-size: 20px;"
+      "border-radius: 24px; color: #fff; border: none; background: #ec4141; }"
+      "QPushButton:hover { background: #ff5252; }"
+      "QPushButton:pressed { background: #c62828; }");
+  m_playBtn->setCursor(Qt::PointingHandCursor);
+
+  // 上下首、停止 — 透明底
+  for (auto *btn : {m_prevBtn, m_stopBtn, m_nextBtn}) {
+    btn->setFixedSize(40, 40);
     btn->setStyleSheet(
-        "font-size: 18px;"
-        "border-radius: 10px;"
-        "border: 1px solid #444;"
-        "color: #ccc;"
-        "background: #2a2a2a;");
+        "QPushButton { font-family: \"Segoe UI Symbol\"; font-size: 16px;"
+        "border-radius: 20px; color: #ec4141; border: none;"
+        "background: transparent; }"
+        "QPushButton:hover { color: #ff5252;"
+        "background: rgba(236,65,65,0.10); }");
   }
+
+  // 模式按钮 — 更小巧
+  m_modeBtn->setFixedSize(36, 36);
+  m_modeBtn->setStyleSheet(
+      "QPushButton { font-family: \"Segoe UI Symbol\"; font-size: 15px;"
+      "border-radius: 18px; color: #888; border: none;"
+      "background: transparent; }"
+      "QPushButton:hover { color: #ccc; background: rgba(255,255,255,0.06); }");
 
   m_volumeSlider = new QSlider(Qt::Horizontal, central);
   m_volumeSlider->setRange(0, 100);
   m_volumeSlider->setValue(70);
   m_volumeSlider->setMaximumWidth(120);
-  m_volumeSlider->setStyleSheet(
-      "QSlider::groove:horizontal { background: #333; height: 3px;"
-      " border-radius: 1px; }"
-      "QSlider::sub-page:horizontal { background: #ec4141;"
-      " border-radius: 1px; }"
-      "QSlider::handle:horizontal { background: #ec4141; width: 10px;"
-      " margin: -3px 0; border-radius: 5px; }");
 
   m_modeLabel = new QLabel("列表循环", central);
-  m_modeLabel->setStyleSheet("color: #999; background: transparent;");
+  m_modeLabel->setStyleSheet("color: #888;");
 
-  auto *openBtn = new QPushButton("📂 打开文件", central);
-  openBtn->setStyleSheet(
-      "border-radius: 8px; padding: 4px 10px;"
-      "border: 1px solid #444; color: #ccc;"
-      "background: #2a2a2a;");
+  auto *openBtn = new QPushButton("打开文件", central);
   connect(openBtn, &QPushButton::clicked, this, &MainWindow::onOpenFiles);
 
-  auto *scanBtn = new QPushButton("📁 扫描文件夹", central);
-  scanBtn->setStyleSheet(openBtn->styleSheet());
+  auto *scanBtn = new QPushButton("扫描文件夹", central);
   connect(scanBtn, &QPushButton::clicked, this, &MainWindow::onScanFolder);
 
-  auto *volIcon = new QLabel("🔊", central);
-  volIcon->setStyleSheet("background: transparent;");
+  auto *volIcon = new QLabel("音量", central);
 
   controlLayout->addStretch();
   controlLayout->addWidget(m_prevBtn);
@@ -326,20 +354,20 @@ void MainWindow::wireSignals() {
           &MainWindow::onLyricOffsetMinus);
   connect(m_lyricPlusBtn, &QPushButton::clicked, this,
           &MainWindow::onLyricOffsetPlus);
-  connect(m_toggleBtn, &QPushButton::clicked, this,
-          &MainWindow::onTogglePanel);
+  connect(m_toggleBtn, &QPushButton::clicked, this, &MainWindow::onTogglePanel);
   connect(m_searchBox, &QLineEdit::textChanged, this,
           &MainWindow::onSearchTextChanged);
 
   // 歌词拖动浏览
-  connect(m_lyricWidget->verticalScrollBar(), &QScrollBar::valueChanged,
-          this, &MainWindow::onLyricScrollChanged);
+  connect(m_lyricWidget->verticalScrollBar(), &QScrollBar::valueChanged, this,
+          &MainWindow::onLyricScrollChanged);
   connect(m_lyricJumpBtn, &QPushButton::clicked, this,
           &MainWindow::onLyricJump);
 
   // 中心行吸附（拖拽松手 / 滚动停止 200ms 后对齐）
   auto doSnap = [this]() {
-    if (m_lyricAutoFollow || m_lrc->isEmpty()) return;
+    if (m_lyricAutoFollow || m_lrc->isEmpty())
+      return;
     int vw = m_lyricWidget->viewport()->width();
     int vh = m_lyricWidget->viewport()->height();
     QListWidgetItem *item = m_lyricWidget->itemAt(QPoint(vw / 2, vh / 2));
@@ -349,8 +377,8 @@ void MainWindow::wireSignals() {
       m_lyricWidget->scrollToItem(item, QAbstractItemView::PositionAtCenter);
     }
   };
-  connect(m_lyricWidget->verticalScrollBar(), &QScrollBar::sliderReleased,
-          this, doSnap);
+  connect(m_lyricWidget->verticalScrollBar(), &QScrollBar::sliderReleased, this,
+          doSnap);
   connect(m_lyricSnapTimer, &QTimer::timeout, this, doSnap);
 
   // 3 秒自动回弹
@@ -431,7 +459,8 @@ void MainWindow::onOpenFiles() {
 }
 
 void MainWindow::onClearAll() {
-  if (m_playlist->isEmpty()) return;
+  if (m_playlist->isEmpty())
+    return;
 
   m_player->stop();
   m_playlist->clear();
@@ -493,7 +522,8 @@ void MainWindow::onPrevious() {
 }
 
 void MainWindow::onPlaylistDoubleClicked(const QModelIndex &index) {
-  int playlistIdx = m_playlistWidget->item(index.row())->data(Qt::UserRole).toInt();
+  int playlistIdx =
+      m_playlistWidget->item(index.row())->data(Qt::UserRole).toInt();
   m_playlist->setCurrentIndex(playlistIdx);
   loadCurrentTrack();
   m_player->play();
@@ -501,7 +531,8 @@ void MainWindow::onPlaylistDoubleClicked(const QModelIndex &index) {
 
 void MainWindow::onPlaylistContextMenu(const QPoint &pos) {
   QListWidgetItem *item = m_playlistWidget->itemAt(pos);
-  if (!item) return;
+  if (!item)
+    return;
 
   int playlistIdx = item->data(Qt::UserRole).toInt();
 
@@ -510,7 +541,8 @@ void MainWindow::onPlaylistContextMenu(const QPoint &pos) {
   QAction *transAction = menu.addAction("转码");
 
   QAction *chosen = menu.exec(m_playlistWidget->viewport()->mapToGlobal(pos));
-  if (!chosen) return;
+  if (!chosen)
+    return;
 
   if (chosen == delAction) {
     // ── 删除 ──
@@ -530,10 +562,12 @@ void MainWindow::onPlaylistContextMenu(const QPoint &pos) {
     QString srcName = QFileInfo(track.filePath).completeBaseName();
 
     // 选择保存路径和格式
-    QString filter = "MP3 (*.mp3);;WAV (*.wav);;FLAC (*.flac);;AAC (*.aac);;OGG (*.ogg)";
-    QString savePath = QFileDialog::getSaveFileName(this, "保存转码文件",
-                                                     srcName, filter);
-    if (savePath.isEmpty()) return;
+    QString filter =
+        "MP3 (*.mp3);;WAV (*.wav);;FLAC (*.flac);;AAC (*.aac);;OGG (*.ogg)";
+    QString savePath =
+        QFileDialog::getSaveFileName(this, "保存转码文件", srcName, filter);
+    if (savePath.isEmpty())
+      return;
 
     // 进度对话框
     auto *progress = new QProgressDialog("正在转码...", "取消", 0, 100, this);
@@ -543,19 +577,20 @@ void MainWindow::onPlaylistContextMenu(const QPoint &pos) {
     progress->setValue(0);
 
     // 连接转码器信号
-    connect(m_transcoder, &Transcoder::progressChanged,
-            progress, &QProgressDialog::setValue);
-    connect(progress, &QProgressDialog::canceled,
-            m_transcoder, &Transcoder::cancel);
+    connect(m_transcoder, &Transcoder::progressChanged, progress,
+            &QProgressDialog::setValue);
+    connect(progress, &QProgressDialog::canceled, m_transcoder,
+            &Transcoder::cancel);
     connect(m_transcoder, &Transcoder::finished, this,
             [this, progress](bool ok, const QString &outPath) {
               progress->close();
               if (ok) {
-                QMessageBox::information(this, "转码完成",
+                QMessageBox::information(
+                    this, "转码完成",
                     QString("文件已保存到：\n%1").arg(outPath));
               } else {
                 QMessageBox::warning(this, "转码失败",
-                    "ffmpeg 转码失败，请检查文件格式。");
+                                     "ffmpeg 转码失败，请检查文件格式。");
               }
               progress->deleteLater();
             });
@@ -564,7 +599,8 @@ void MainWindow::onPlaylistContextMenu(const QPoint &pos) {
     if (!m_transcoder->start(track.filePath, savePath, track.duration)) {
       progress->close();
       progress->deleteLater();
-      QMessageBox::warning(this, "转码失败",
+      QMessageBox::warning(
+          this, "转码失败",
           "无法启动 ffmpeg，请确认 ffmpeg.exe 存在于程序目录。");
     }
   }
@@ -584,17 +620,17 @@ void MainWindow::onTogglePlayMode() {
   case PlayMode::Repeat:
     next = PlayMode::Shuffle;
     label = "随机播放";
-    icon = "🔀";
+    icon = "⇄";
     break;
   case PlayMode::Shuffle:
     next = PlayMode::RepeatOne;
     label = "单曲循环";
-    icon = "🔂";
+    icon = "↺";
     break;
   case PlayMode::RepeatOne:
     next = PlayMode::Repeat;
     label = "列表循环";
-    icon = "🔁";
+    icon = "↻";
     break;
   }
   m_playlist->setPlayMode(next);
@@ -691,7 +727,8 @@ void MainWindow::refreshCurrentRow(int playlistIndex) {
   // 在过滤后的显示列表中查找对应的 display row
   int displayRow = -1;
   for (int i = 0; i < m_playlistWidget->count(); ++i) {
-    if (m_playlistWidget->item(i)->data(Qt::UserRole).toInt() == playlistIndex) {
+    if (m_playlistWidget->item(i)->data(Qt::UserRole).toInt() ==
+        playlistIndex) {
       displayRow = i;
       break;
     }
@@ -781,15 +818,17 @@ void MainWindow::autoLoadLyric(const QString &audioPath) {
                     QDirIterator::Subdirectories);
     while (it.hasNext()) {
       it.next();
-      if (QFileInfo(it.filePath()).completeBaseName().compare(
-              base, Qt::CaseInsensitive) == 0) {
+      if (QFileInfo(it.filePath())
+              .completeBaseName()
+              .compare(base, Qt::CaseInsensitive) == 0) {
         m_lrc->load(it.filePath());
         break;
       }
     }
   }
 
-  if (m_lrc->isEmpty()) return;
+  if (m_lrc->isEmpty())
+    return;
 
   // 填入歌词列表
   for (const auto &line : m_lrc->lines())
@@ -804,16 +843,19 @@ void MainWindow::autoLoadLyric(const QString &audioPath) {
 
   // 显示偏移量
   qint64 offset = m_playlist->currentTrack().lyricOffset;
-  m_lyricOffsetLabel->setText(
-      QString("%1%2s").arg(offset >= 0 ? "+" : "").arg(offset / 1000.0, 0, 'f', 1));
+  m_lyricOffsetLabel->setText(QString("%1%2s")
+                                  .arg(offset >= 0 ? "+" : "")
+                                  .arg(offset / 1000.0, 0, 'f', 1));
 }
 
 void MainWindow::refreshLyric(qint64 posMs) {
-  if (m_lrc->isEmpty()) return;
+  if (m_lrc->isEmpty())
+    return;
 
   qint64 offset = m_playlist->currentTrack().lyricOffset;
   int line = m_lrc->lineAt(posMs, offset);
-  if (line == m_lyricLine) return; // 没变化
+  if (line == m_lyricLine)
+    return; // 没变化
 
   // 清除旧行的高亮
   if (m_lyricLine >= 0 && m_lyricLine < m_lyricWidget->count()) {
@@ -842,7 +884,8 @@ void MainWindow::refreshLyric(qint64 posMs) {
 }
 
 void MainWindow::onLyricOffsetPlus() {
-  if (m_lyricWidget->count() == 0) return;
+  if (m_lyricWidget->count() == 0)
+    return;
 
   auto &t = const_cast<Track &>(m_playlist->currentTrack());
   t.lyricOffset += 500; // +0.5s → ms
@@ -852,14 +895,14 @@ void MainWindow::onLyricOffsetPlus() {
 }
 
 void MainWindow::onLyricOffsetMinus() {
-  if (m_lyricWidget->count() == 0) return;
+  if (m_lyricWidget->count() == 0)
+    return;
 
   auto &t = const_cast<Track &>(m_playlist->currentTrack());
   t.lyricOffset -= 500; // -0.5s → ms
-  m_lyricOffsetLabel->setText(
-      QString("%1%2s")
-          .arg(t.lyricOffset >= 0 ? "+" : "")
-          .arg(t.lyricOffset / 1000.0, 0, 'f', 1));
+  m_lyricOffsetLabel->setText(QString("%1%2s")
+                                  .arg(t.lyricOffset >= 0 ? "+" : "")
+                                  .arg(t.lyricOffset / 1000.0, 0, 'f', 1));
   saveLyricOffset();
 }
 
@@ -896,15 +939,16 @@ void MainWindow::onLyricScrollChanged(int value) {
       QPoint vpOff = m_lyricWidget->viewport()->pos();
       QRect r = m_lyricWidget->visualItemRect(item);
       int bx = lwPos.x() + vpOff.x() + static_cast<int>(vw * 0.70);
-      int by = lwPos.y() + vpOff.y() + r.center().y() - m_lyricJumpBtn->height() / 2;
+      int by =
+          lwPos.y() + vpOff.y() + r.center().y() - m_lyricJumpBtn->height() / 2;
       m_lyricJumpBtn->move(bx, by);
       m_lyricJumpBtn->show();
       m_lyricJumpBtn->raise();
     }
   }
   // 重置定时器
-  m_lyricSnapTimer->start();    // 滚动停止 200ms 后吸附中心行
-  m_lyricReturnTimer->start();  // 3 秒后回弹
+  m_lyricSnapTimer->start();   // 滚动停止 200ms 后吸附中心行
+  m_lyricReturnTimer->start(); // 3 秒后回弹
 }
 
 void MainWindow::onLyricJump() {
@@ -946,10 +990,10 @@ void MainWindow::onSearchTextChanged(const QString &text) {
 void MainWindow::onTogglePanel() {
   if (m_stack->currentIndex() == 0) {
     m_stack->setCurrentIndex(1);
-    m_toggleBtn->setText("💿 唱片");
+    m_toggleBtn->setText("唱片");
   } else {
     m_stack->setCurrentIndex(0);
-    m_toggleBtn->setText("📝 歌词");
+    m_toggleBtn->setText("歌词");
   }
 }
 
