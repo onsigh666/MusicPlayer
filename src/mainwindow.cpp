@@ -27,6 +27,8 @@
 #include <QTimer>
 #include <QVBoxLayout>
 
+#include <limits>
+
 // ─────────────────────── 实心红色右三角按钮 ───────────────────────
 
 class TriangleButton : public QPushButton {
@@ -917,47 +919,55 @@ void MainWindow::saveLyricOffset() {
 
 void MainWindow::onLyricScrollChanged(int value) {
   Q_UNUSED(value);
-  // 程序自动滚动不触发浏览模式
   if (m_lyricProgramScroll) {
     m_lyricProgramScroll = false;
     return;
   }
 
-  // 用户手动滚动 → 进入浏览模式
+  // 用户手动滚动 → 进入浏览模式，显示固定位置的跳转按钮
   if (m_lyricAutoFollow) {
     m_lyricAutoFollow = false;
+    // 按钮固定在歌词区域右侧、垂直居中，位置不随滚动变化
+    int bx = m_lyricPage->width() - m_lyricJumpBtn->width() - 12;
+    int by = (m_lyricWidget->pos().y() + m_lyricWidget->height() / 2)
+             - m_lyricJumpBtn->height() / 2;
+    m_lyricJumpBtn->move(bx, by);
+    m_lyricJumpBtn->show();
+    m_lyricJumpBtn->raise();
   }
 
-  // 找出视口正中央对应的歌词行
+  // 跟踪视口中心行（供 snap 吸附使用）
   int vw = m_lyricWidget->viewport()->width();
   int vh = m_lyricWidget->viewport()->height();
   QListWidgetItem *item = m_lyricWidget->itemAt(QPoint(vw / 2, vh / 2));
-  if (item) {
-    int row = m_lyricWidget->row(item);
-    if (row != m_lyricCenterRow) {
-      m_lyricCenterRow = row;
-      // 坐标换算：按钮放在视口内 70% 宽度处，Y 对齐中央行
-      QPoint lwPos = m_lyricWidget->pos();
-      QPoint vpOff = m_lyricWidget->viewport()->pos();
-      QRect r = m_lyricWidget->visualItemRect(item);
-      int bx = lwPos.x() + vpOff.x() + static_cast<int>(vw * 0.70);
-      int by =
-          lwPos.y() + vpOff.y() + r.center().y() - m_lyricJumpBtn->height() / 2;
-      m_lyricJumpBtn->move(bx, by);
-      m_lyricJumpBtn->show();
-      m_lyricJumpBtn->raise();
-    }
-  }
-  // 重置定时器
-  m_lyricSnapTimer->start();   // 滚动停止 200ms 后吸附中心行
-  m_lyricReturnTimer->start(); // 3 秒后回弹
+  if (item)
+    m_lyricCenterRow = m_lyricWidget->row(item);
+
+  m_lyricSnapTimer->start();
+  m_lyricReturnTimer->start();
 }
 
 void MainWindow::onLyricJump() {
-  if (m_lyricCenterRow < 0 || m_lyricCenterRow >= m_lrc->lines().size())
+  // 将按钮中心点映射到歌词 viewport 坐标系，找距离最近的歌词行
+  QPoint btnCenter = m_lyricJumpBtn->geometry().center();
+  QPoint vpPt = m_lyricWidget->viewport()->mapFrom(m_lyricPage, btnCenter);
+
+  int closestRow = -1;
+  int closestDist = std::numeric_limits<int>::max();
+  for (int i = 0; i < m_lyricWidget->count(); ++i) {
+    QRect r = m_lyricWidget->visualItemRect(m_lyricWidget->item(i));
+    if (!r.isValid()) continue;
+    int dist = std::abs(r.center().y() - vpPt.y());
+    if (dist < closestDist) {
+      closestDist = dist;
+      closestRow = i;
+    }
+  }
+
+  if (closestRow < 0 || closestRow >= m_lrc->lines().size())
     return;
 
-  qint64 timestamp = m_lrc->lines().at(m_lyricCenterRow).timestamp;
+  qint64 timestamp = m_lrc->lines().at(closestRow).timestamp;
   qint64 offset = m_playlist->currentTrack().lyricOffset;
   m_player->setPosition(timestamp - offset);
 

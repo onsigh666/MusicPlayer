@@ -764,8 +764,8 @@ D:/GithubRemoteRepository/MusicPlayer/src/library.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
-D:/GithubRemoteRepository/MusicPlayer/src/lrcparser.h
 D:/GithubRemoteRepository/MusicPlayer/src/discwidget.cpp
+D:/GithubRemoteRepository/MusicPlayer/src/lrcparser.h
 D:/GithubRemoteRepository/MusicPlayer/src/mainwindow.h
  mmc:Q_OBJECT
  mdp:D:/GithubRemoteRepository/MusicPlayer/build/Debug/MusicPlayer_autogen/moc_predefs.h
@@ -1892,6 +1892,7 @@ D:/GithubRemoteRepository/MusicPlayer/src/playlist.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
+D:/GithubRemoteRepository/MusicPlayer/src/playlist.cpp
 D:/GithubRemoteRepository/MusicPlayer/src/transcoder.h
  mmc:Q_OBJECT
  mdp:D:/GithubRemoteRepository/MusicPlayer/build/Debug/MusicPlayer_autogen/moc_predefs.h
@@ -2214,9 +2215,8 @@ D:/GithubRemoteRepository/MusicPlayer/src/transcoder.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
-D:/GithubRemoteRepository/MusicPlayer/src/playlist.cpp
 D:/GithubRemoteRepository/MusicPlayer/src/library.cpp
 D:/GithubRemoteRepository/MusicPlayer/src/main.cpp
-D:/GithubRemoteRepository/MusicPlayer/src/mainwindow.cpp
 D:/GithubRemoteRepository/MusicPlayer/src/player.cpp
+D:/GithubRemoteRepository/MusicPlayer/src/mainwindow.cpp
 D:/GithubRemoteRepository/MusicPlayer/src/transcoder.cpp
