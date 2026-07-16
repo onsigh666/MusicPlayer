@@ -34,6 +34,12 @@ void DiscWidget::stopSpin() {
     update();
 }
 
+void DiscWidget::setDarkMode(bool dark) {
+    if (m_darkMode == dark) return;
+    m_darkMode = dark;
+    update();
+}
+
 void DiscWidget::resizeEvent(QResizeEvent *event) {
     QWidget::resizeEvent(event);
 }
@@ -55,35 +61,34 @@ void DiscWidget::paintEvent(QPaintEvent *) {
 }
 
 void DiscWidget::drawDisc(QPainter &p, const QPointF &center, qreal r) {
-    // ── 黑胶底色 ──
+    // ── 盘面底色 ──
     p.setPen(Qt::NoPen);
-    p.setBrush(QColor(55, 55, 55));
+    p.setBrush(m_darkMode ? QColor(55, 55, 55) : QColor(210, 210, 210));
     p.drawEllipse(center, r, r);
 
     // ── 同心纹理凹槽 ──
-    p.setPen(QPen(QColor(75, 75, 75), 0.5));
+    p.setPen(QPen(m_darkMode ? QColor(75, 75, 75) : QColor(185, 185, 185), 0.5));
     p.setBrush(Qt::NoBrush);
     for (qreal rr = r * 0.32; rr < r * 0.92; rr += r * 0.025) {
         p.drawEllipse(center, rr, rr);
     }
 
-    // ── 反光亮线（径向，用于显示旋转） ──
+    // ── 反光亮线 ──
     p.setPen(Qt::NoPen);
     QLinearGradient grad(-r * 0.85, 0, r * 0.3, 0);
     grad.setColorAt(0.0, QColor(255, 255, 255, 0));
-    grad.setColorAt(0.48, QColor(255, 255, 255, 15));
-    grad.setColorAt(0.52, QColor(255, 255, 255, 15));
+    grad.setColorAt(0.48, QColor(255, 255, 255, m_darkMode ? 15 : 40));
+    grad.setColorAt(0.52, QColor(255, 255, 255, m_darkMode ? 15 : 40));
     grad.setColorAt(1.0, QColor(255, 255, 255, 0));
     p.setBrush(grad);
     p.drawEllipse(center, r * 0.95, r * 0.95);
 
-    // ── 中心标签（网易云红） ──
+    // ── 中心标签（红底白字，双模式相同） ──
     qreal labelR = r * 0.3;
     p.setPen(Qt::NoPen);
-    p.setBrush(QColor(236, 65, 65)); // 网易云红 #ec4141
+    p.setBrush(QColor(236, 65, 65));
     p.drawEllipse(center, labelR, labelR);
 
-    // 标签上的文字
     p.setPen(QColor(255, 255, 255, 220));
     QFont font("sans-serif", labelR * 0.28);
     font.setBold(true);
@@ -93,6 +98,6 @@ void DiscWidget::drawDisc(QPainter &p, const QPointF &center, qreal r) {
 
     // ── 中心孔 ──
     p.setPen(Qt::NoPen);
-    p.setBrush(QColor(30, 30, 30));
+    p.setBrush(m_darkMode ? QColor(30, 30, 30) : QColor(160, 160, 160));
     p.drawEllipse(center, r * 0.05, r * 0.05);
 }

@@ -15,6 +15,8 @@ public:
     qreal rotation() const { return m_angle; }
     void setRotation(qreal angle);
 
+    void setDarkMode(bool dark);
+
 public slots:
     void startSpin();   // 开始旋转
     void pauseSpin();   // 暂停旋转（停在当前位置）
@@ -31,6 +33,7 @@ private:
     qreal m_angle = 0;    // 当前旋转角度
     qreal m_speed = 1.5;  // 每帧旋转度数
     bool m_spinning = false;
+    bool m_darkMode = true;
 };
 
 #endif // DISCWIDGET_H

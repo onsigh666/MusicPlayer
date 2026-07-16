@@ -66,6 +66,7 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "onLyricScrollChanged",
         "value",
         "onLyricJump",
+        "onToggleTheme",
         "refreshPlayPauseBtn",
         "Player::State",
         "state",
@@ -132,31 +133,33 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         }}),
         // Slot 'onLyricJump'
         QtMocHelpers::SlotData<void()>(27, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onToggleTheme'
+        QtMocHelpers::SlotData<void()>(28, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'refreshPlayPauseBtn'
-        QtMocHelpers::SlotData<void(Player::State)>(28, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { 0x80000000 | 29, 30 },
+        QtMocHelpers::SlotData<void(Player::State)>(29, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 30, 31 },
         }}),
         // Slot 'refreshTimeLabel'
-        QtMocHelpers::SlotData<void(qint64)>(31, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::LongLong, 32 },
+        QtMocHelpers::SlotData<void(qint64)>(32, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::LongLong, 33 },
         }}),
         // Slot 'refreshProgressRange'
-        QtMocHelpers::SlotData<void(qint64)>(33, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::LongLong, 34 },
+        QtMocHelpers::SlotData<void(qint64)>(34, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::LongLong, 35 },
         }}),
         // Slot 'refreshCurrentRow'
-        QtMocHelpers::SlotData<void(int)>(35, 2, QMC::AccessPrivate, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(int)>(36, 2, QMC::AccessPrivate, QMetaType::Void, {{
             { QMetaType::Int, 11 },
         }}),
         // Slot 'onTrackEnded'
-        QtMocHelpers::SlotData<void()>(36, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(37, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onPlayerError'
-        QtMocHelpers::SlotData<void(const QString &)>(37, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::QString, 38 },
+        QtMocHelpers::SlotData<void(const QString &)>(38, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 39 },
         }}),
         // Slot 'onMetaDataReady'
-        QtMocHelpers::SlotData<void(const QString &, const QString &, const QString &)>(39, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { QMetaType::QString, 40 }, { QMetaType::QString, 41 }, { QMetaType::QString, 42 },
+        QtMocHelpers::SlotData<void(const QString &, const QString &, const QString &)>(40, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 41 }, { QMetaType::QString, 42 }, { QMetaType::QString, 43 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -199,13 +202,14 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 15: _t->onSearchTextChanged((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         case 16: _t->onLyricScrollChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
         case 17: _t->onLyricJump(); break;
-        case 18: _t->refreshPlayPauseBtn((*reinterpret_cast<std::add_pointer_t<Player::State>>(_a[1]))); break;
-        case 19: _t->refreshTimeLabel((*reinterpret_cast<std::add_pointer_t<qint64>>(_a[1]))); break;
-        case 20: _t->refreshProgressRange((*reinterpret_cast<std::add_pointer_t<qint64>>(_a[1]))); break;
-        case 21: _t->refreshCurrentRow((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
-        case 22: _t->onTrackEnded(); break;
-        case 23: _t->onPlayerError((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 24: _t->onMetaDataReady((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3]))); break;
+        case 18: _t->onToggleTheme(); break;
+        case 19: _t->refreshPlayPauseBtn((*reinterpret_cast<std::add_pointer_t<Player::State>>(_a[1]))); break;
+        case 20: _t->refreshTimeLabel((*reinterpret_cast<std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 21: _t->refreshProgressRange((*reinterpret_cast<std::add_pointer_t<qint64>>(_a[1]))); break;
+        case 22: _t->refreshCurrentRow((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 23: _t->onTrackEnded(); break;
+        case 24: _t->onPlayerError((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 25: _t->onMetaDataReady((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast<std::add_pointer_t<QString>>(_a[3]))); break;
         default: ;
         }
     }
@@ -230,14 +234,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 25)
+        if (_id < 26)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 25;
+        _id -= 26;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 25)
+        if (_id < 26)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 25;
+        _id -= 26;
     }
     return _id;
 }

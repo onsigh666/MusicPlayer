@@ -7,6 +7,9 @@
 
 #include <QMainWindow>
 
+/// 主题模式
+enum class Theme { Dark, Light };
+
 class Playlist;
 class Library;
 class LrcParser;
@@ -28,6 +31,9 @@ public:
   explicit MainWindow(QWidget *parent = nullptr);
   ~MainWindow() override;
 
+protected:
+  void closeEvent(QCloseEvent *event) override;
+
 private slots:
   // UI → 逻辑
   void onOpenFiles();
@@ -48,6 +54,7 @@ private slots:
   void onSearchTextChanged(const QString &text); // 搜索过滤
   void onLyricScrollChanged(int value); // 用户拖动歌词
   void onLyricJump();                   // 跳转到浏览行
+  void onToggleTheme();                // 深色/浅色模式切换
 
   // 逻辑 → UI
   void refreshPlayPauseBtn(Player::State state);
@@ -70,7 +77,12 @@ private:
   void refreshLyric(qint64 posMs);              // 根据播放位置高亮当前歌词行
   void saveLyricOffset();                       // 持久化当前曲目的偏移量
   void applySearchFilter();                     // 根据搜索框刷新播放列表显示
+  void applyTheme();                             // 根据 m_theme 刷新全部样式
   static QString formatTime(qint64 ms);
+
+  Theme m_theme = Theme::Dark;
+  QColor m_highlightBg{0x2d, 0x25, 0x25};  // 当前播放行高亮背景
+  QColor m_highlightFg{0xec, 0x41, 0x41};  // 当前播放行高亮文字
 
   // 核心组件
   Player *m_player = nullptr;
@@ -100,6 +112,7 @@ private:
   QTimer *m_lyricReturnTimer = nullptr;   // 3 秒自动回弹
   QTimer *m_lyricSnapTimer = nullptr;     // 200ms 吸附防抖
   QPushButton *m_lyricJumpBtn = nullptr;  // 跳转按钮
+  qint64 m_restorePosition = -1;          // 启动时待恢复的播放位置
   QLabel *m_timeLabel = nullptr;
   QLabel *m_modeLabel = nullptr;
   QSlider *m_progressSlider = nullptr;
@@ -113,6 +126,8 @@ private:
   QPushButton *m_prevBtn = nullptr;
   QPushButton *m_modeBtn = nullptr;
   QPushButton *m_toggleBtn = nullptr;   // 光碟/歌词切换
+  QPushButton *m_themeBtn = nullptr;    // 深色/浅色模式切换
+  QWidget *m_central = nullptr;         // 中央控件（applyTheme 需要）
 };
 
 #endif // MAINWINDOW_H

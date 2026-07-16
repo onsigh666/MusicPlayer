@@ -7,7 +7,13 @@
 #include "transcoder.h"
 
 #include <QApplication>
+#include <QCloseEvent>
 #include <QDirIterator>
+
+#ifdef Q_OS_WIN
+#include <Windows.h>
+#include <dwmapi.h>
+#endif
 #include <QFileDialog>
 #include <QFileInfo>
 #include <QFont>
@@ -22,6 +28,7 @@
 #include <QProgressDialog>
 #include <QPushButton>
 #include <QScrollBar>
+#include <QSettings>
 #include <QSlider>
 #include <QStackedWidget>
 #include <QTimer>
@@ -58,81 +65,93 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
   m_lrc = new LrcParser();
   m_transcoder = new Transcoder(this);
 
+  // 恢复上次主题设置
+  QSettings settings;
+  if (settings.value("theme", "dark").toString() == "light")
+    m_theme = Theme::Light;
+
   setupUI();
   wireSignals();
 
   // 启动时恢复上次扫描的曲库
   loadLibraryTracks();
+
+  // 恢复上次播放的曲目和进度
+  {
+    QSettings settings;
+    QString lastPath = settings.value("lastTrack").toString();
+    if (!lastPath.isEmpty()) {
+      for (int i = 0; i < m_playlist->count(); ++i) {
+        if (m_playlist->trackAt(i).filePath == lastPath) {
+          qint64 pos = settings.value("lastPosition", 0).toLongLong();
+          if (pos > 0)
+            m_restorePosition = pos; // 必须在 loadCurrentTrack 之前赋值
+          m_playlist->setCurrentIndex(i);
+          loadCurrentTrack();
+          // 重试定时器：Qt6 WMF 后端在 setSource() 后可能需要一段时间
+          // 才能接受 setPosition()，每 150ms 重试，最多 20 次（3 秒）
+          if (m_restorePosition >= 0) {
+            auto *retryTimer = new QTimer(this);
+            retryTimer->setInterval(150);
+            auto *attempts = new int(0);
+            connect(retryTimer, &QTimer::timeout, this,
+                    [this, retryTimer, attempts]() {
+                      ++(*attempts);
+                      if (m_player->duration() > 0) {
+                        qint64 target =
+                            qMin(m_restorePosition, m_player->duration());
+                        m_player->setPosition(target);
+                        // 验证 seek 是否生效（位置误差 < 500ms）
+                        if (std::abs(m_player->position() - target) < 500) {
+                          m_restorePosition = -1;
+                          retryTimer->stop();
+                          retryTimer->deleteLater();
+                          delete attempts;
+                          return;
+                        }
+                      }
+                      if (*attempts >= 20) {
+                        m_restorePosition = -1;
+                        retryTimer->stop();
+                        retryTimer->deleteLater();
+                        delete attempts;
+                      }
+                    });
+            retryTimer->start();
+          }
+          break;
+        }
+      }
+    }
+    int vol = settings.value("lastVolume", -1).toInt();
+    if (vol >= 0) {
+      m_volumeSlider->setValue(vol);
+      m_player->setVolume(vol / 100.0f);
+    }
+  }
 }
 
 MainWindow::~MainWindow() = default;
 
+void MainWindow::closeEvent(QCloseEvent *event) {
+  const Track &t = m_playlist->currentTrack();
+  if (!t.filePath.isEmpty()) {
+    QSettings settings;
+    settings.setValue("lastTrack", t.filePath);
+    settings.setValue("lastPosition", m_player->position());
+    settings.setValue("lastVolume", m_volumeSlider->value());
+  }
+  QMainWindow::closeEvent(event);
+}
+
 // ─────────────────────── UI 构建 ───────────────────────
 
 void MainWindow::setupUI() {
-  // 主窗口自身也设为深色底，防止露出白色
-  setStyleSheet("QMainWindow { background: #121212; }");
-
-  auto *central = new QWidget(this);
-  central->setStyleSheet(QLatin1String(
-      // ── 背景 ──
-      "QWidget { background: #121212; }"
-      // ── 通用按钮 ──
-      "QPushButton {"
-      " border: 1px solid #ec4141; border-radius: 10px;"
-      " padding: 5px 12px; background: #282828;"
-      " color: #e0e0e0; font-size: 13px; }"
-      "QPushButton:hover { background: #383838; }"
-      "QPushButton:pressed { background: #1e1e1e; }"
-      "QPushButton:focus { outline: none; }"
-      // ── 输入框 ──
-      "QLineEdit {"
-      " border: 1px solid #ec4141; border-radius: 10px;"
-      " padding: 6px 10px; background: #1c1c1c;"
-      " color: #e0e0e0; font-size: 13px;"
-      " selection-background-color: #ec4141; }"
-      "QLineEdit:focus { border-color: #ff5252; }"
-      // ── 列表 ──
-      "QListWidget {"
-      " background: #1c1c1c; border: 1px solid #ec4141;"
-      " border-radius: 10px; padding: 4px; outline: none;"
-      " color: #b0b0b0; }"
-      "QListWidget::item { border-radius: 6px; padding: 5px 8px; }"
-      "QListWidget::item:hover { background: #2a2a2a; }"
-      "QListWidget::item:selected { background: #333; }"
-      // ── 标签 ──
-      "QLabel { background: transparent; color: #b0b0b0; }"
-      // ── 滑块 ──
-      "QSlider::groove:horizontal {"
-      " background: #3a3a3a; height: 6px; border-radius: 3px;"
-      " border: 1px solid #ec4141; }"
-      "QSlider::sub-page:horizontal {"
-      " background: #ec4141; border-radius: 3px; }"
-      "QSlider::handle:horizontal {"
-      " background: #ec4141; width: 14px; height: 14px;"
-      " margin: -5px 0; border-radius: 7px;"
-      " border: 1px solid #cc0000; }"
-      "QSlider::handle:horizontal:hover { background: #ff5252; }"
-      // ── 滚动条 ──
-      "QScrollBar:vertical {"
-      " background: transparent; width: 6px; margin: 0; }"
-      "QScrollBar::handle:vertical {"
-      " background: #ec4141; border-radius: 3px; min-height: 30px; }"
-      "QScrollBar::handle:vertical:hover { background: #ff5252; }"
-      "QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: "
-      "0; }"
-      "QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { "
-      "background: transparent; }"
-      "QScrollBar:horizontal { height: 0; }"
-      // ── 进度条 ──
-      "QProgressBar {"
-      " border: 1px solid #ec4141; border-radius: 6px; background: #333;"
-      " height: 8px; text-align: center; }"
-      "QProgressBar::chunk { background: #ec4141; border-radius: 4px; }"));
-  auto *mainLayout = new QVBoxLayout(central);
+  m_central = new QWidget(this);
+  auto *mainLayout = new QVBoxLayout(m_central);
 
   // 歌曲标题
-  m_titleLabel = new QLabel("未在播放", central);
+  m_titleLabel = new QLabel("未在播放", m_central);
   m_titleLabel->setAlignment(Qt::AlignCenter);
   m_titleLabel->setStyleSheet(
       "font-size: 16px; font-weight: bold; margin: 8px; color: #f0f0f0;");
@@ -142,7 +161,7 @@ void MainWindow::setupUI() {
   auto *middleLayout = new QHBoxLayout;
 
   // 左侧：曲库列表 + 清空按钮
-  auto *leftPanel = new QWidget(central);
+  auto *leftPanel = new QWidget(m_central);
   auto *leftLayout = new QVBoxLayout(leftPanel);
   leftLayout->setContentsMargins(0, 0, 0, 0);
 
@@ -164,7 +183,7 @@ void MainWindow::setupUI() {
   middleLayout->addWidget(leftPanel, 1); // 占 1/3
 
   // 右侧面板：光碟 / 歌词双层切换
-  m_rightPanel = new QWidget(central);
+  m_rightPanel = new QWidget(m_central);
   m_rightPanel->setStyleSheet(
       "background: #1e1e1e; border: 1px solid #ec4141; border-radius: 10px;");
   auto *rightLayout = new QVBoxLayout(m_rightPanel);
@@ -256,9 +275,9 @@ void MainWindow::setupUI() {
 
   // 进度条 + 时间
   auto *progressLayout = new QHBoxLayout;
-  m_progressSlider = new QSlider(Qt::Horizontal, central);
+  m_progressSlider = new QSlider(Qt::Horizontal, m_central);
   m_progressSlider->setEnabled(false);
-  m_timeLabel = new QLabel("00:00 / 00:00", central);
+  m_timeLabel = new QLabel("00:00 / 00:00", m_central);
   m_timeLabel->setStyleSheet("color: #888; font-size: 12px;");
   progressLayout->addWidget(m_progressSlider, 1);
   progressLayout->addWidget(m_timeLabel);
@@ -268,11 +287,11 @@ void MainWindow::setupUI() {
   auto *controlLayout = new QHBoxLayout;
 
   // 用 Segoe UI Symbol 字体 — 文字符号而非 emoji，CSS 颜色才生效
-  m_prevBtn = new QPushButton("⏮", central);
-  m_playBtn = new QPushButton("▶", central);
-  m_stopBtn = new QPushButton("⏹", central);
-  m_nextBtn = new QPushButton("⏭", central);
-  m_modeBtn = new QPushButton("↻", central);
+  m_prevBtn = new QPushButton("⏮", m_central);
+  m_playBtn = new QPushButton("▶", m_central);
+  m_stopBtn = new QPushButton("⏹", m_central);
+  m_nextBtn = new QPushButton("⏭", m_central);
+  m_modeBtn = new QPushButton("↻", m_central);
 
   // 播放按钮 — 红色圆形
   m_playBtn->setFixedSize(48, 48);
@@ -302,22 +321,27 @@ void MainWindow::setupUI() {
       "background: transparent; }"
       "QPushButton:hover { color: #ccc; background: rgba(255,255,255,0.06); }");
 
-  m_volumeSlider = new QSlider(Qt::Horizontal, central);
+  m_volumeSlider = new QSlider(Qt::Horizontal, m_central);
   m_volumeSlider->setRange(0, 100);
   m_volumeSlider->setValue(70);
   m_volumeSlider->setMaximumWidth(120);
 
-  m_modeLabel = new QLabel("列表循环", central);
+  m_modeLabel = new QLabel("列表循环", m_central);
   m_modeLabel->setStyleSheet("color: #888;");
 
-  auto *openBtn = new QPushButton("打开文件", central);
+  auto *openBtn = new QPushButton("打开文件", m_central);
   connect(openBtn, &QPushButton::clicked, this, &MainWindow::onOpenFiles);
 
-  auto *scanBtn = new QPushButton("扫描文件夹", central);
+  auto *scanBtn = new QPushButton("扫描文件夹", m_central);
   connect(scanBtn, &QPushButton::clicked, this, &MainWindow::onScanFolder);
 
-  auto *volIcon = new QLabel("音量", central);
+  auto *volIcon = new QLabel("音量", m_central);
 
+  // 换肤按钮（左下角）
+  m_themeBtn = new QPushButton(m_central);
+  connect(m_themeBtn, &QPushButton::clicked, this, &MainWindow::onToggleTheme);
+
+  controlLayout->addWidget(m_themeBtn);
   controlLayout->addStretch();
   controlLayout->addWidget(m_prevBtn);
   controlLayout->addWidget(m_playBtn);
@@ -332,7 +356,8 @@ void MainWindow::setupUI() {
   controlLayout->addWidget(openBtn);
   mainLayout->addLayout(controlLayout);
 
-  setCentralWidget(central);
+  setCentralWidget(m_central);
+  applyTheme(); // 初次应用默认深色主题
 }
 
 // ─────────────────────── 信号接线 ───────────────────────
@@ -713,6 +738,11 @@ void MainWindow::refreshTimeLabel(qint64 posMs) {
 void MainWindow::refreshProgressRange(qint64 durMs) {
   m_progressSlider->setRange(0, static_cast<int>(durMs));
   m_progressSlider->setEnabled(durMs > 0);
+  // 启动时恢复上次播放位置（首次尝试，重试定时器兜底）
+  if (m_restorePosition >= 0 && durMs > 0) {
+    m_player->setPosition(qMin(m_restorePosition, durMs));
+    // 不在此清除 m_restorePosition，由重试定时器验证并清除
+  }
 }
 
 void MainWindow::refreshCurrentRow(int playlistIndex) {
@@ -739,8 +769,8 @@ void MainWindow::refreshCurrentRow(int playlistIndex) {
   // 设置新曲目的高亮（网易云红字 + 浅暗红底）
   if (displayRow >= 0) {
     auto *item = m_playlistWidget->item(displayRow);
-    item->setBackground(QColor("#2d2525"));
-    item->setForeground(QColor("#ec4141"));
+    item->setBackground(m_highlightBg);
+    item->setForeground(m_highlightFg);
     QFont f = item->font();
     f.setBold(true);
     item->setFont(f);
@@ -913,6 +943,169 @@ void MainWindow::onLyricOffsetMinus() {
 void MainWindow::saveLyricOffset() {
   // 当前 Track 已经更新，直接全量保存整个曲库
   saveLibraryTracks();
+}
+
+// ─────────────────────── 换肤 ───────────────────────
+
+void MainWindow::applyTheme() {
+  bool dark = (m_theme == Theme::Dark);
+
+  // ── 颜色变量 ──
+  QString winBg = dark ? "#121212" : "#f0f0f0";
+  QString ctrlBg = dark ? "#282828" : "#e0e0e0";
+  QString ctrlHov = dark ? "#383838" : "#d0d0d0";
+  QString ctrlPrs = dark ? "#1e1e1e" : "#c0c0c0";
+  QString inputBg = dark ? "#1c1c1c" : "#ffffff";
+  QString txtPri = dark ? "#e0e0e0" : "#333333";
+  QString txtSec = dark ? "#b0b0b0" : "#555555";
+  QString txtMut = dark ? "#888888" : "#999999";
+  QString titleClr = dark ? "#f0f0f0" : "#222222";
+  QString listBg = dark ? "#1c1c1c" : "#ffffff";
+  QString listHov = dark ? "#2a2a2a" : "#eeeeee";
+  QString listSel = dark ? "#333333" : "#e0e0e0";
+  QString rpBg = dark ? "#1e1e1e" : "#ffffff";
+  QString sliderBg = dark ? "#3a3a3a" : "#d0d0d0";
+  QString progBg = dark ? "#333333" : "#e0e0e0";
+  QString lyricClr = dark ? "#999999" : "#777777";
+  QString menuBg = dark ? "#1e1e1e" : "#ffffff";
+  QString menuSep = dark ? "#3a3a3a" : "#e0e0e0";
+  QString tooltipBg = dark ? "#2a2a2a" : "#ffffff";
+  QString msgBg = dark ? "#1e1e1e" : "#ffffff";
+  QString msgBtnHov = dark ? "#383838" : "#e0e0e0";
+
+  // ── 主窗口 ──
+  setStyleSheet(QString("QMainWindow { background: %1; }").arg(winBg));
+
+#ifdef Q_OS_WIN
+  // 标题栏深色/浅色模式
+  {
+    HWND hwnd = reinterpret_cast<HWND>(winId());
+    const int DWMWA_USE_IMMERSIVE_DARK_MODE = 20;
+    BOOL useDark = dark ? TRUE : FALSE;
+    DwmSetWindowAttribute(hwnd, DWMWA_USE_IMMERSIVE_DARK_MODE,
+                          &useDark, sizeof(useDark));
+  }
+#endif
+
+  // ── Central 控件样式表 ──
+  m_central->setStyleSheet(QStringLiteral(
+      "QWidget { background: %1; }"
+      "QPushButton { border: 1px solid #ec4141; border-radius: 10px;"
+      " padding: 5px 12px; background: %2; color: %3; font-size: 13px; }"
+      "QPushButton:hover { background: %4; }"
+      "QPushButton:pressed { background: %5; }"
+      "QPushButton:focus { outline: none; }"
+      "QLineEdit { border: 1px solid #ec4141; border-radius: 10px;"
+      " padding: 6px 10px; background: %6; color: %3; font-size: 13px;"
+      " selection-background-color: #ec4141; }"
+      "QLineEdit:focus { border-color: #ff5252; }"
+      "QListWidget { background: %7; border: 1px solid #ec4141;"
+      " border-radius: 10px; padding: 4px; outline: none; color: %8; }"
+      "QListWidget::item { border-radius: 6px; padding: 5px 8px; }"
+      "QListWidget::item:hover { background: %9; }"
+      "QListWidget::item:selected { background: %10; }"
+      "QLabel { background: transparent; color: %8; }"
+      "QSlider::groove:horizontal { background: %11; height: 6px;"
+      " border-radius: 3px; border: 1px solid #ec4141; }"
+      "QSlider::sub-page:horizontal { background: #ec4141; border-radius: 3px; }"
+      "QSlider::handle:horizontal { background: #ec4141; width: 14px;"
+      " height: 14px; margin: -5px 0; border-radius: 7px;"
+      " border: 1px solid #cc0000; }"
+      "QSlider::handle:horizontal:hover { background: #ff5252; }"
+      "QScrollBar:vertical { background: transparent; width: 6px; margin: 0; }"
+      "QScrollBar::handle:vertical { background: #ec4141; border-radius: 3px;"
+      " min-height: 30px; }"
+      "QScrollBar::handle:vertical:hover { background: #ff5252; }"
+      "QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }"
+      "QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {"
+      " background: transparent; }"
+      "QScrollBar:horizontal { height: 0; }"
+      "QProgressBar { border: 1px solid #ec4141; border-radius: 6px;"
+      " background: %12; height: 8px; text-align: center; }"
+      "QProgressBar::chunk { background: #ec4141; border-radius: 4px; }")
+      .arg(winBg, ctrlBg, txtPri, ctrlHov, ctrlPrs, inputBg,
+           listBg, txtSec, listHov, listSel, sliderBg, progBg));
+
+  // ── 内联控件 ──
+  m_titleLabel->setStyleSheet(
+      QString("font-size: 16px; font-weight: bold; margin: 8px; color: %1;")
+          .arg(titleClr));
+  m_rightPanel->setStyleSheet(
+      QString("background: %1; border: 1px solid #ec4141; border-radius: 10px;")
+          .arg(rpBg));
+  m_infoArtist->setStyleSheet(
+      QString("font-size: 13px; color: %1;").arg(txtPri));
+  m_infoAlbum->setStyleSheet(
+      QString("font-size: 12px; color: %1;").arg(txtMut));
+  m_lyricWidget->setStyleSheet(
+      QString("QListWidget { border: none; background: transparent;"
+              " font-size: 13px; color: %1; }"
+              "QListWidget::item { padding: 3px 6px; border-radius: 6px; }")
+          .arg(lyricClr));
+  m_lyricOffsetLabel->setStyleSheet(
+      QString("color: %1; font-size: 12px;").arg(txtMut));
+  m_timeLabel->setStyleSheet(
+      QString("color: %1; font-size: 12px;").arg(txtMut));
+  m_modeLabel->setStyleSheet(QString("color: %1;").arg(txtMut));
+
+  // ── 导航按钮（红字透明底，颜色不变） ──
+  for (auto *btn : {m_prevBtn, m_stopBtn, m_nextBtn}) {
+    btn->setStyleSheet(
+        "QPushButton { font-family: \"Segoe UI Symbol\"; font-size: 16px;"
+        "border-radius: 20px; color: #ec4141; border: none;"
+        "background: transparent; }"
+        "QPushButton:hover { color: #ff5252; background: rgba(236,65,65,0.10); }");
+  }
+
+  // ── 模式按钮 ──
+  m_modeBtn->setStyleSheet(
+      QString("QPushButton { font-family: \"Segoe UI Symbol\"; font-size: 15px;"
+              "border-radius: 18px; color: %1; border: none;"
+              "background: transparent; }"
+              "QPushButton:hover { color: %2; background: %3; }")
+          .arg(dark ? "#888" : "#aaa", dark ? "#ccc" : "#666",
+               dark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.06)"));
+
+  // ── 高亮颜色 ──
+  m_highlightBg = dark ? QColor(0x2d, 0x25, 0x25) : QColor(0xfc, 0xe8, 0xe8);
+  m_highlightFg = QColor(0xec, 0x41, 0x41); // 红色不变
+
+  // ── 全局 QSS（菜单、提示、对话框） ──
+  qApp->setStyleSheet(QStringLiteral(
+      "* { font-family: \"Microsoft YaHei\", \"PingFang SC\","
+      " \"Segoe UI\", sans-serif; }"
+      "QToolTip { background: %1; color: %2; border: 1px solid #ec4141;"
+      " border-radius: 8px; padding: 4px 8px; font-size: 12px; }"
+      "QMenu { background: %3; border: 1px solid #ec4141; border-radius: 10px;"
+      " padding: 6px; color: %2; font-size: 13px; }"
+      "QMenu::item { padding: 6px 28px; border-radius: 6px; }"
+      "QMenu::item:selected { background: #ec4141; color: #fff; }"
+      "QMenu::separator { height: 1px; background: %4; margin: 4px 10px; }"
+      "QMessageBox { background: %5; }"
+      "QMessageBox QLabel { color: %2; font-size: 13px; }"
+      "QMessageBox QPushButton { min-width: 80px; min-height: 28px;"
+      " border: 1px solid #ec4141; border-radius: 8px;"
+      " background: %6; color: %2; }"
+      "QMessageBox QPushButton:hover { background: %7; }"
+      "QProgressDialog { background: %5; color: %2; }"
+      "QProgressDialog QLabel { color: %2; font-size: 13px; }")
+      .arg(tooltipBg, txtPri, menuBg, menuSep, msgBg, ctrlBg, msgBtnHov));
+
+  // ── 光碟 ──
+  m_disc->setDarkMode(dark);
+
+  // ── 换肤按钮文字 ──
+  m_themeBtn->setText(dark ? "切换浅色模式" : "切换深色模式");
+
+  // ── 刷新当前播放高亮 ──
+  refreshCurrentRow(m_playlist->currentIndex());
+}
+
+void MainWindow::onToggleTheme() {
+  m_theme = (m_theme == Theme::Dark) ? Theme::Light : Theme::Dark;
+  QSettings settings;
+  settings.setValue("theme", m_theme == Theme::Dark ? "dark" : "light");
+  applyTheme();
 }
 
 // ─────────────────────── 歌词拖动浏览 ───────────────────────
