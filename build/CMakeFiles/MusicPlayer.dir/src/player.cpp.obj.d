@@ -1,6 +1,6 @@
 CMakeFiles/MusicPlayer.dir/src/player.cpp.obj: \
- D:\GithubRemoteRepository\MusicPlayer\src\player.cpp \
- D:\GithubRemoteRepository\MusicPlayer\src\player.h \
+ D:\GithubRemoteRepository\music-player\src\player.cpp \
+ D:\GithubRemoteRepository\music-player\src\player.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qobject.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qobjectdefs.h \

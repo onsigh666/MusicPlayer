@@ -1,8 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "audioanalyzer.h"
 #include "discwidget.h"
 #include "player.h"
+#include "spectrumwidget.h"
 #include "track.h"
 
 #include <QMainWindow>
@@ -55,6 +57,8 @@ private slots:
   void onLyricScrollChanged(int value); // 用户拖动歌词
   void onLyricJump();                   // 跳转到浏览行
   void onToggleTheme();                // 深色/浅色模式切换
+  void onAnalysisComplete(const AnalysisData &data);
+  void onAnalysisFailed(const QString &reason);
 
   // 逻辑 → UI
   void refreshPlayPauseBtn(Player::State state);
@@ -78,7 +82,8 @@ private:
   void saveLyricOffset();                       // 持久化当前曲目的偏移量
   void applySearchFilter();                     // 根据搜索框刷新播放列表显示
   void applyTheme();                             // 根据 m_theme 刷新全部样式
-  static QString formatTime(qint64 ms);
+  QString formatTime(qint64 ms);
+  void triggerAudioAnalysis(const QString &filePath, qint64 durationMs);
 
   Theme m_theme = Theme::Dark;
   QColor m_highlightBg{0x2d, 0x25, 0x25};  // 当前播放行高亮背景
@@ -90,6 +95,9 @@ private:
   Library *m_library = nullptr;
   LrcParser *m_lrc = nullptr;
   Transcoder *m_transcoder = nullptr;
+  AudioAnalyzer *m_analyzer = nullptr;
+  SpectrumWidget *m_spectrum = nullptr;
+  AnalysisData m_currentAnalysis;
 
   // UI 控件
   QWidget *m_rightPanel = nullptr;

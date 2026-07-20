@@ -34,6 +34,10 @@ add_executable(${PROJECT_NAME} WIN32
     src/discwidget.h
     src/transcoder.cpp
     src/transcoder.h
+    src/audioanalyzer.cpp
+    src/audioanalyzer.h
+    src/spectrumwidget.cpp
+    src/spectrumwidget.h
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE

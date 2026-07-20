@@ -1,5 +1,5 @@
-D:/GithubRemoteRepository/MusicPlayer/build/MusicPlayer_autogen/UVLADIE3JM/moc_discwidget.cpp: D:/GithubRemoteRepository/MusicPlayer/src/discwidget.h \
-  D:/GithubRemoteRepository/MusicPlayer/build/MusicPlayer_autogen/moc_predefs.h \
+D:/GithubRemoteRepository/music-player/build/MusicPlayer_autogen/UVLADIE3JM/moc_discwidget.cpp: D:/GithubRemoteRepository/music-player/src/discwidget.h \
+  D:/GithubRemoteRepository/music-player/build/MusicPlayer_autogen/moc_predefs.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QTimer \
   D:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \

@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\GithubRemoteRepository\MusicPlayer
+CMAKE_SOURCE_DIR = D:\GithubRemoteRepository\music-player
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\GithubRemoteRepository\MusicPlayer\build\Debug
+CMAKE_BINARY_DIR = D:\GithubRemoteRepository\music-player\build\Debug
 
 # Utility rule file for MusicPlayer_autogen.
 
@@ -70,9 +70,9 @@ CMakeFiles/MusicPlayer_autogen: MusicPlayer_autogen/timestamp
 MusicPlayer_autogen/timestamp: D:/Qt/6.11.1/mingw_64/bin/moc.exe
 MusicPlayer_autogen/timestamp: D:/Qt/6.11.1/mingw_64/bin/uic.exe
 MusicPlayer_autogen/timestamp: CMakeFiles/MusicPlayer_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\GithubRemoteRepository\MusicPlayer\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target MusicPlayer"
-	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/GithubRemoteRepository/MusicPlayer/build/Debug/CMakeFiles/MusicPlayer_autogen.dir/AutogenInfo.json Debug
-	"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GithubRemoteRepository/MusicPlayer/build/Debug/MusicPlayer_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\GithubRemoteRepository\music-player\build\Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target MusicPlayer"
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen D:/GithubRemoteRepository/music-player/build/Debug/CMakeFiles/MusicPlayer_autogen.dir/AutogenInfo.json Debug
+	"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/GithubRemoteRepository/music-player/build/Debug/MusicPlayer_autogen/timestamp
 
 CMakeFiles/MusicPlayer_autogen.dir/codegen:
 .PHONY : CMakeFiles/MusicPlayer_autogen.dir/codegen
@@ -91,6 +91,6 @@ CMakeFiles/MusicPlayer_autogen.dir/clean:
 .PHONY : CMakeFiles/MusicPlayer_autogen.dir/clean
 
 CMakeFiles/MusicPlayer_autogen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\GithubRemoteRepository\MusicPlayer D:\GithubRemoteRepository\MusicPlayer D:\GithubRemoteRepository\MusicPlayer\build\Debug D:\GithubRemoteRepository\MusicPlayer\build\Debug D:\GithubRemoteRepository\MusicPlayer\build\Debug\CMakeFiles\MusicPlayer_autogen.dir\DependInfo.cmake "--color=$(COLOR)" MusicPlayer_autogen
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\GithubRemoteRepository\music-player D:\GithubRemoteRepository\music-player D:\GithubRemoteRepository\music-player\build\Debug D:\GithubRemoteRepository\music-player\build\Debug D:\GithubRemoteRepository\music-player\build\Debug\CMakeFiles\MusicPlayer_autogen.dir\DependInfo.cmake "--color=$(COLOR)" MusicPlayer_autogen
 .PHONY : CMakeFiles/MusicPlayer_autogen.dir/depend
 

@@ -1,5 +1,5 @@
-D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/MusicPlayer.dir
-D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/edit_cache.dir
-D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/rebuild_cache.dir
-D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/MusicPlayer_autogen_timestamp_deps.dir
-D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/MusicPlayer_autogen.dir
+D:/GithubRemoteRepository/music-player/build/CMakeFiles/MusicPlayer.dir
+D:/GithubRemoteRepository/music-player/build/CMakeFiles/edit_cache.dir
+D:/GithubRemoteRepository/music-player/build/CMakeFiles/rebuild_cache.dir
+D:/GithubRemoteRepository/music-player/build/CMakeFiles/MusicPlayer_autogen_timestamp_deps.dir
+D:/GithubRemoteRepository/music-player/build/CMakeFiles/MusicPlayer_autogen.dir

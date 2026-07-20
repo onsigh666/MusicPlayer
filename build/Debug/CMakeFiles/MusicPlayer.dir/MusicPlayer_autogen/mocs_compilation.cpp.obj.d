@@ -1,9 +1,12 @@
 CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
- D:\GithubRemoteRepository\MusicPlayer\build\Debug\MusicPlayer_autogen\mocs_compilation.cpp \
- D:\GithubRemoteRepository\MusicPlayer\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_discwidget.cpp \
- D:/GithubRemoteRepository/MusicPlayer/src/discwidget.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/QTimer \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qtimer.h \
+ D:\GithubRemoteRepository\music-player\build\Debug\MusicPlayer_autogen\mocs_compilation.cpp \
+ D:\GithubRemoteRepository\music-player\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_audioanalyzer.cpp \
+ D:/GithubRemoteRepository/music-player/src/audioanalyzer.h \
+ D:/Qt/6.11.1/mingw_64/include/QtMultimedia/QAudioFormat \
+ D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qaudioformat.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qobject.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qobjectdefs.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qnamespace.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qglobal.h \
  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -151,11 +154,6 @@ CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qtresource.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qttranslation.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qversiontagging.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qbasictimer.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qobject.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qobjectdefs.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qnamespace.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qcompare.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qstdlibdetection.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qcomparehelpers.h \
@@ -326,14 +324,31 @@ CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qshareddata.h \
+ D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+ D:/Qt/6.11.1/mingw_64/include/QtGui/qtguiglobal.h \
+ D:/Qt/6.11.1/mingw_64/include/QtGui/qtgui-config.h \
+ D:/Qt/6.11.1/mingw_64/include/QtGui/qtguiexports.h \
+ D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+ D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/QByteArray \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qtmochelpers.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qtmocconstants.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/q20algorithm.h \
+ D:\GithubRemoteRepository\music-player\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_discwidget.cpp \
+ D:/GithubRemoteRepository/music-player/src/discwidget.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/QTimer \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qtimer.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qbasictimer.h \
+ D:/Qt/6.11.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qeventloop.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qdeadlinetimer.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
- D:/Qt/6.11.1/mingw_64/include/QtGui/qtguiglobal.h \
- D:/Qt/6.11.1/mingw_64/include/QtGui/qtgui-config.h \
- D:/Qt/6.11.1/mingw_64/include/QtGui/qtguiexports.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qwindowdefs.h \
@@ -353,7 +368,6 @@ CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qcolor.h \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qrgb.h \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qrgba64.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qshareddata.h \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qimage.h \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qpixelformat.h \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qtransform.h \
@@ -391,12 +405,9 @@ CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qcursor.h \
  D:/Qt/6.11.1/mingw_64/include/QtGui/qbitmap.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qtmochelpers.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/qtmocconstants.h \
- D:/Qt/6.11.1/mingw_64/include/QtCore/q20algorithm.h \
- D:\GithubRemoteRepository\MusicPlayer\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_library.cpp \
- D:/GithubRemoteRepository/MusicPlayer/src/library.h \
- D:/GithubRemoteRepository/MusicPlayer/src/track.h \
+ D:\GithubRemoteRepository\music-player\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_library.cpp \
+ D:/GithubRemoteRepository/music-player/src/library.h \
+ D:/GithubRemoteRepository/music-player/src/track.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QFileInfo \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qfileinfo.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qfile.h \
@@ -438,20 +449,23 @@ CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qtimezone.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QString \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QList \
- D:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
- D:\GithubRemoteRepository\MusicPlayer\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_mainwindow.cpp \
- D:/GithubRemoteRepository/MusicPlayer/src/mainwindow.h \
- D:/GithubRemoteRepository/MusicPlayer/src/discwidget.h \
- D:/GithubRemoteRepository/MusicPlayer/src/player.h \
+ D:\GithubRemoteRepository\music-player\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_mainwindow.cpp \
+ D:/GithubRemoteRepository/music-player/src/mainwindow.h \
+ D:/GithubRemoteRepository/music-player/src/audioanalyzer.h \
+ D:/GithubRemoteRepository/music-player/src/discwidget.h \
+ D:/GithubRemoteRepository/music-player/src/player.h \
+ D:/GithubRemoteRepository/music-player/src/spectrumwidget.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
  D:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabwidget.h \
- D:\GithubRemoteRepository\MusicPlayer\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_player.cpp \
- D:/GithubRemoteRepository/MusicPlayer/src/player.h \
- D:\GithubRemoteRepository\MusicPlayer\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_playlist.cpp \
- D:/GithubRemoteRepository/MusicPlayer/src/playlist.h \
+ D:\GithubRemoteRepository\music-player\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_player.cpp \
+ D:/GithubRemoteRepository/music-player/src/player.h \
+ D:\GithubRemoteRepository\music-player\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_playlist.cpp \
+ D:/GithubRemoteRepository/music-player/src/playlist.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QList \
- D:\GithubRemoteRepository\MusicPlayer\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_transcoder.cpp \
- D:/GithubRemoteRepository/MusicPlayer/src/transcoder.h \
+ D:\GithubRemoteRepository\music-player\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_spectrumwidget.cpp \
+ D:/GithubRemoteRepository/music-player/src/spectrumwidget.h \
+ D:\GithubRemoteRepository\music-player\build\Debug\MusicPlayer_autogen\UVLADIE3JM/moc_transcoder.cpp \
+ D:/GithubRemoteRepository/music-player/src/transcoder.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QProcess \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qprocess.h

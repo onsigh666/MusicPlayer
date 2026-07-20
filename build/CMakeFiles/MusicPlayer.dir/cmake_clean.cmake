@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/MusicPlayer.dir/src/audioanalyzer.cpp.obj"
+  "CMakeFiles/MusicPlayer.dir/src/audioanalyzer.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/src/discwidget.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/src/discwidget.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/src/library.cpp.obj"
@@ -15,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MusicPlayer.dir/src/player.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/src/playlist.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/src/playlist.cpp.obj.d"
+  "CMakeFiles/MusicPlayer.dir/src/spectrumwidget.cpp.obj"
+  "CMakeFiles/MusicPlayer.dir/src/spectrumwidget.cpp.obj.d"
   "CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.obj"
   "CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.obj.d"
   "CMakeFiles/MusicPlayer_autogen.dir/AutogenUsed.txt"

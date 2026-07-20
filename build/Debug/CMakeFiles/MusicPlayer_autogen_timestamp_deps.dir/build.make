@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\GithubRemoteRepository\MusicPlayer
+CMAKE_SOURCE_DIR = D:\GithubRemoteRepository\music-player
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\GithubRemoteRepository\MusicPlayer\build\Debug
+CMAKE_BINARY_DIR = D:\GithubRemoteRepository\music-player\build\Debug
 
 # Utility rule file for MusicPlayer_autogen_timestamp_deps.
 
@@ -80,6 +80,6 @@ CMakeFiles/MusicPlayer_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/MusicPlayer_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/MusicPlayer_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\GithubRemoteRepository\MusicPlayer D:\GithubRemoteRepository\MusicPlayer D:\GithubRemoteRepository\MusicPlayer\build\Debug D:\GithubRemoteRepository\MusicPlayer\build\Debug D:\GithubRemoteRepository\MusicPlayer\build\Debug\CMakeFiles\MusicPlayer_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)" MusicPlayer_autogen_timestamp_deps
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\GithubRemoteRepository\music-player D:\GithubRemoteRepository\music-player D:\GithubRemoteRepository\music-player\build\Debug D:\GithubRemoteRepository\music-player\build\Debug D:\GithubRemoteRepository\music-player\build\Debug\CMakeFiles\MusicPlayer_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)" MusicPlayer_autogen_timestamp_deps
 .PHONY : CMakeFiles/MusicPlayer_autogen_timestamp_deps.dir/depend
 

@@ -1,6 +1,6 @@
 CMakeFiles/MusicPlayer.dir/src/lrcparser.cpp.obj: \
- D:\GithubRemoteRepository\MusicPlayer\src\lrcparser.cpp \
- D:\GithubRemoteRepository\MusicPlayer\src\lrcparser.h \
+ D:\GithubRemoteRepository\music-player\src\lrcparser.cpp \
+ D:\GithubRemoteRepository\music-player\src\lrcparser.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QList \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qlist.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qarraydatapointer.h \

@@ -66,7 +66,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -351,7 +350,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -424,7 +422,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -451,7 +448,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
       
       The CXX compiler identification is GNU, found in:
-        D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/4.4.0-rc3/CompilerIdCXX/a.exe
+        D:/GithubRemoteRepository/music-player/build/CMakeFiles/4.4.0-rc3/CompilerIdCXX/a.exe
       
   -
     kind: "find-v1"
@@ -506,7 +503,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -557,7 +553,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -617,7 +612,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -668,7 +662,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -728,7 +721,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -779,7 +771,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -839,7 +830,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -890,7 +880,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -950,7 +939,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -1001,7 +989,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -1061,7 +1048,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -1112,7 +1098,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -1172,7 +1157,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -1223,7 +1207,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -1283,7 +1266,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -1334,7 +1316,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -1394,7 +1375,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -1445,7 +1425,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -1505,7 +1484,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -1556,7 +1534,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -1616,7 +1593,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -1723,9 +1699,6 @@ events:
       - "C:/Program Files/nodejs/tapi.com"
       - "C:/Program Files/nodejs/tapi.exe"
       - "C:/Program Files/nodejs/tapi"
-      - "D:/TortoiseSVN/bin/tapi.com"
-      - "D:/TortoiseSVN/bin/tapi.exe"
-      - "D:/TortoiseSVN/bin/tapi"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/tapi.com"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/tapi.exe"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/tapi"
@@ -1786,7 +1759,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -1849,7 +1821,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -1956,9 +1927,6 @@ events:
       - "C:/Program Files/nodejs/gcc-ar-13.1.com"
       - "C:/Program Files/nodejs/gcc-ar-13.1.exe"
       - "C:/Program Files/nodejs/gcc-ar-13.1"
-      - "D:/TortoiseSVN/bin/gcc-ar-13.1.com"
-      - "D:/TortoiseSVN/bin/gcc-ar-13.1.exe"
-      - "D:/TortoiseSVN/bin/gcc-ar-13.1"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ar-13.1.com"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ar-13.1.exe"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ar-13.1"
@@ -2076,9 +2044,6 @@ events:
       - "C:/Program Files/nodejs/gcc-ar-13.com"
       - "C:/Program Files/nodejs/gcc-ar-13.exe"
       - "C:/Program Files/nodejs/gcc-ar-13"
-      - "D:/TortoiseSVN/bin/gcc-ar-13.com"
-      - "D:/TortoiseSVN/bin/gcc-ar-13.exe"
-      - "D:/TortoiseSVN/bin/gcc-ar-13"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ar-13.com"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ar-13.exe"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ar-13"
@@ -2196,9 +2161,6 @@ events:
       - "C:/Program Files/nodejs/gcc-ar13.com"
       - "C:/Program Files/nodejs/gcc-ar13.exe"
       - "C:/Program Files/nodejs/gcc-ar13"
-      - "D:/TortoiseSVN/bin/gcc-ar13.com"
-      - "D:/TortoiseSVN/bin/gcc-ar13.exe"
-      - "D:/TortoiseSVN/bin/gcc-ar13"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ar13.com"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ar13.exe"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ar13"
@@ -2260,7 +2222,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -2323,7 +2284,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -2430,9 +2390,6 @@ events:
       - "C:/Program Files/nodejs/gcc-ranlib-13.1.com"
       - "C:/Program Files/nodejs/gcc-ranlib-13.1.exe"
       - "C:/Program Files/nodejs/gcc-ranlib-13.1"
-      - "D:/TortoiseSVN/bin/gcc-ranlib-13.1.com"
-      - "D:/TortoiseSVN/bin/gcc-ranlib-13.1.exe"
-      - "D:/TortoiseSVN/bin/gcc-ranlib-13.1"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13.1.com"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13.1.exe"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13.1"
@@ -2550,9 +2507,6 @@ events:
       - "C:/Program Files/nodejs/gcc-ranlib-13.com"
       - "C:/Program Files/nodejs/gcc-ranlib-13.exe"
       - "C:/Program Files/nodejs/gcc-ranlib-13"
-      - "D:/TortoiseSVN/bin/gcc-ranlib-13.com"
-      - "D:/TortoiseSVN/bin/gcc-ranlib-13.exe"
-      - "D:/TortoiseSVN/bin/gcc-ranlib-13"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13.com"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13.exe"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ranlib-13"
@@ -2670,9 +2624,6 @@ events:
       - "C:/Program Files/nodejs/gcc-ranlib13.com"
       - "C:/Program Files/nodejs/gcc-ranlib13.exe"
       - "C:/Program Files/nodejs/gcc-ranlib13"
-      - "D:/TortoiseSVN/bin/gcc-ranlib13.com"
-      - "D:/TortoiseSVN/bin/gcc-ranlib13.exe"
-      - "D:/TortoiseSVN/bin/gcc-ranlib13"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ranlib13.com"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ranlib13.exe"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/gcc-ranlib13"
@@ -2734,7 +2685,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -2800,7 +2750,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -2914,7 +2863,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -2937,8 +2885,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-jwp2dx"
-      binary: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-jwp2dx"
+      source: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-hmbw8h"
+      binary: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-hmbw8h"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2949,13 +2897,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-jwp2dx'
+        Change Dir: 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-hmbw8h'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_7530e/fast
-        D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7530e.dir\\build.make CMakeFiles/cmTC_7530e.dir/build
-        mingw32-make.exe[1]: Entering directory 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-jwp2dx'
-        Building CXX object CMakeFiles/cmTC_7530e.dir/CMakeCXXCompilerABI.cpp.obj
-        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_5c5c6/fast
+        D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5c5c6.dir\\build.make CMakeFiles/cmTC_5c5c6.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-hmbw8h'
+        Building CXX object CMakeFiles/cmTC_5c5c6.dir/CMakeCXXCompilerABI.cpp.obj
+        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
@@ -2963,8 +2911,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7530e.dir\\'
-         D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_7530e.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\ccxJAihG.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5c5c6.dir\\'
+         D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_5c5c6.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cciGdZA7.s
         GNU C++17 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
         
@@ -2987,14 +2935,14 @@ events:
          D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: b3d236387f35294e2a73c51628039e05
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7530e.dir\\'
-         D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\ccxJAihG.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5c5c6.dir\\'
+         D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cciGdZA7.s
         GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39
         COMPILER_PATH=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_7530e.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7530e.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_5c5c6.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5c5c6.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
@@ -3005,16 +2953,16 @@ events:
         gcc version 13.1.0 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 
         COMPILER_PATH=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7530e.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_7530e.'
-         D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cczaoFWT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_7530e.exe D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7530e.dir/objects.a --no-whole-archive --out-implib libcmTC_7530e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5c5c6.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_5c5c6.'
+         D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cchn6NQg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_5c5c6.exe D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5c5c6.dir/objects.a --no-whole-archive --out-implib libcmTC_5c5c6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         collect2 version 13.1.0
-        D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cczaoFWT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_7530e.exe D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7530e.dir/objects.a --no-whole-archive --out-implib libcmTC_7530e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cchn6NQg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_5c5c6.exe D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5c5c6.dir/objects.a --no-whole-archive --out-implib libcmTC_5c5c6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         GNU ld (GNU Binutils) 2.39
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7530e.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_7530e.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_7530e.dir/objects.a
-        D:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_7530e.dir/objects.a @CMakeFiles\\cmTC_7530e.dir\\objects1.rsp
-        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_7530e.dir/objects.a -Wl,--no-whole-archive -o cmTC_7530e.exe -Wl,--out-implib,libcmTC_7530e.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make.exe[1]: Leaving directory 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-jwp2dx'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5c5c6.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_5c5c6.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_5c5c6.dir/objects.a
+        D:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_5c5c6.dir/objects.a @CMakeFiles\\cmTC_5c5c6.dir\\objects1.rsp
+        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_5c5c6.dir/objects.a -Wl,--no-whole-archive -o cmTC_5c5c6.exe -Wl,--out-implib,libcmTC_5c5c6.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make.exe[1]: Leaving directory 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-hmbw8h'
         
       exitCode: 0
   -
@@ -3053,13 +3001,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-jwp2dx']
+        ignore line: [Change Dir: 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-hmbw8h']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_7530e/fast]
-        ignore line: [D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7530e.dir\\build.make CMakeFiles/cmTC_7530e.dir/build]
-        ignore line: [mingw32-make.exe[1]: Entering directory 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-jwp2dx']
-        ignore line: [Building CXX object CMakeFiles/cmTC_7530e.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_5c5c6/fast]
+        ignore line: [D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5c5c6.dir\\build.make CMakeFiles/cmTC_5c5c6.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-hmbw8h']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5c5c6.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -3068,8 +3016,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (x86_64-posix-seh-rev1  Built by MinGW-Builds project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7530e.dir\\']
-        ignore line: [ D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_7530e.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\ccxJAihG.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5c5c6.dir\\']
+        ignore line: [ D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_5c5c6.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cciGdZA7.s]
         ignore line: [GNU C++17 (x86_64-posix-seh-rev1  Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
         ignore line: []
@@ -3092,8 +3040,8 @@ events:
         ignore line: [ D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b3d236387f35294e2a73c51628039e05]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7530e.dir\\']
-        ignore line: [ D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\ccxJAihG.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5c5c6.dir\\']
+        ignore line: [ D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cciGdZA7.s]
         ignore line: [GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39]
         ignore line: [COMPILER_PATH=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
         ignore line: [D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/]
@@ -3104,9 +3052,9 @@ events:
         ignore line: [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7530e.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_7530e.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7530e.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_5c5c6.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_5c5c6.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5c5c6.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
@@ -3124,14 +3072,14 @@ events:
         ignore line: [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7530e.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_7530e.']
-        link line: [ D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cczaoFWT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_7530e.exe D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7530e.dir/objects.a --no-whole-archive --out-implib libcmTC_7530e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o] ==> linker architecture flags [-m;i386pep]
-        link line: [ D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cczaoFWT.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_7530e.exe D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7530e.dir/objects.a --no-whole-archive --out-implib libcmTC_7530e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5c5c6.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_5c5c6.']
+        link line: [ D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cchn6NQg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_5c5c6.exe D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5c5c6.dir/objects.a --no-whole-archive --out-implib libcmTC_5c5c6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o] ==> linker architecture flags [-m;i386pep]
+        link line: [ D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cchn6NQg.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_5c5c6.exe D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_5c5c6.dir/objects.a --no-whole-archive --out-implib libcmTC_5c5c6.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
           arg [D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=D:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cczaoFWT.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\WANGXI~1\\AppData\\Local\\Temp\\cchn6NQg.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -3157,7 +3105,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_7530e.exe] ==> ignore
+          arg [cmTC_5c5c6.exe] ==> ignore
           arg [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> obj [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
           arg [-LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> dir [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0]
@@ -3168,10 +3116,10 @@ events:
           arg [-LD:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> dir [D:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_7530e.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_5c5c6.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_7530e.dll.a] ==> ignore
+          arg [libcmTC_5c5c6.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -3262,8 +3210,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-g7967r"
-      binary: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-g7967r"
+      source: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-jwy3oh"
+      binary: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-jwy3oh"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -3274,19 +3222,19 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-g7967r'
+        Change Dir: 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-jwy3oh'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_c03d4/fast
-        D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_c03d4.dir\\build.make CMakeFiles/cmTC_c03d4.dir/build
-        mingw32-make.exe[1]: Entering directory 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-g7967r'
-        Building CXX object CMakeFiles/cmTC_c03d4.dir/src.cxx.obj
-        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles\\cmTC_c03d4.dir\\src.cxx.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-g7967r\\src.cxx
-        Linking CXX executable cmTC_c03d4.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_c03d4.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_c03d4.dir/objects.a
-        D:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_c03d4.dir/objects.a @CMakeFiles\\cmTC_c03d4.dir\\objects1.rsp
-        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_c03d4.dir/objects.a -Wl,--no-whole-archive -o cmTC_c03d4.exe -Wl,--out-implib,libcmTC_c03d4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_c03d4.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-g7967r'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_246fa/fast
+        D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_246fa.dir\\build.make CMakeFiles/cmTC_246fa.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-jwy3oh'
+        Building CXX object CMakeFiles/cmTC_246fa.dir/src.cxx.obj
+        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles\\cmTC_246fa.dir\\src.cxx.obj -c D:\\GithubRemoteRepository\\music-player\\build\\CMakeFiles\\CMakeScratch\\TryCompile-jwy3oh\\src.cxx
+        Linking CXX executable cmTC_246fa.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_246fa.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_246fa.dir/objects.a
+        D:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_246fa.dir/objects.a @CMakeFiles\\cmTC_246fa.dir\\objects1.rsp
+        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_246fa.dir/objects.a -Wl,--no-whole-archive -o cmTC_246fa.exe -Wl,--out-implib,libcmTC_246fa.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_246fa.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-jwy3oh'
         
       exitCode: 0
   -
@@ -3365,51 +3313,51 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6Config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt5Config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt5Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt5-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt5-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt5.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt5.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt5.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt5.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt5.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt5.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt5.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt5.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -6289,7 +6237,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -6319,8 +6266,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-w56a66"
-      binary: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-w56a66"
+      source: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-xtg6fd"
+      binary: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-xtg6fd"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -6331,19 +6278,19 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-w56a66'
+        Change Dir: 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-xtg6fd'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_3370a/fast
-        D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_3370a.dir\\build.make CMakeFiles/cmTC_3370a.dir/build
-        mingw32-make.exe[1]: Entering directory 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-w56a66'
-        Building CXX object CMakeFiles/cmTC_3370a.dir/src.cxx.obj
-        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles\\cmTC_3370a.dir\\src.cxx.obj -c D:\\GithubRemoteRepository\\MusicPlayer\\build\\CMakeFiles\\CMakeScratch\\TryCompile-w56a66\\src.cxx
-        Linking CXX executable cmTC_3370a.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_3370a.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_3370a.dir/objects.a
-        D:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_3370a.dir/objects.a @CMakeFiles\\cmTC_3370a.dir\\objects1.rsp
-        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_3370a.dir/objects.a -Wl,--no-whole-archive -o cmTC_3370a.exe -Wl,--out-implib,libcmTC_3370a.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_3370a.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/CMakeScratch/TryCompile-w56a66'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_5d786/fast
+        D:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_5d786.dir\\build.make CMakeFiles/cmTC_5d786.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-xtg6fd'
+        Building CXX object CMakeFiles/cmTC_5d786.dir/src.cxx.obj
+        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles\\cmTC_5d786.dir\\src.cxx.obj -c D:\\GithubRemoteRepository\\music-player\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xtg6fd\\src.cxx
+        Linking CXX executable cmTC_5d786.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_5d786.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_5d786.dir/objects.a
+        D:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_5d786.dir/objects.a @CMakeFiles\\cmTC_5d786.dir\\objects1.rsp
+        D:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_5d786.dir/objects.a -Wl,--no-whole-archive -o cmTC_5d786.exe -Wl,--out-implib,libcmTC_5d786.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_5d786.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'D:/GithubRemoteRepository/music-player/build/CMakeFiles/CMakeScratch/TryCompile-xtg6fd'
         
       exitCode: 0
   -
@@ -6397,27 +6344,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6CoreToolsConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6CoreToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6coretools-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6coretools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6CoreTools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6CoreTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6coretools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6coretools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6CoreTools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6CoreTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6coretools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6coretools.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -6489,7 +6436,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -6556,27 +6502,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6EntryPointPrivateConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6EntryPointPrivateConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6entrypointprivate-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6entrypointprivate-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6EntryPointPrivate.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6EntryPointPrivate.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6entrypointprivate.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6entrypointprivate.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6EntryPointPrivate.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6EntryPointPrivate.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6entrypointprivate.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6entrypointprivate.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -6632,7 +6578,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -6704,7 +6649,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -6770,7 +6714,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -6829,27 +6772,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6CoreConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6CoreConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6core-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6core-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Core.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Core.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6core.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6core.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6Core.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6Core.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6core.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6core.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -6921,7 +6864,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -6994,7 +6936,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -7047,7 +6988,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/vulkan/vulkan.h"
       - "D:/codeblocks/MinGW/bin/vulkan/vulkan.h"
       - "C:/Program Files/nodejs/vulkan/vulkan.h"
-      - "D:/TortoiseSVN/bin/vulkan/vulkan.h"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/vulkan/vulkan.h"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/vulkan/vulkan.h"
       - "D:/miktex/miktex/bin/x64/vulkan/vulkan.h"
@@ -7106,7 +7046,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -7179,7 +7118,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -7234,7 +7172,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -7295,7 +7232,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -7373,7 +7309,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -7504,9 +7439,6 @@ events:
       - "C:/Program Files/nodejs/glslc.com"
       - "C:/Program Files/nodejs/glslc.exe"
       - "C:/Program Files/nodejs/glslc"
-      - "D:/TortoiseSVN/bin/glslc.com"
-      - "D:/TortoiseSVN/bin/glslc.exe"
-      - "D:/TortoiseSVN/bin/glslc"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/glslc.com"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/glslc.exe"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/glslc"
@@ -7612,7 +7544,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -7686,7 +7617,6 @@ events:
       - "C:/Users/wangxiang/MinGW/bin/"
       - "D:/codeblocks/MinGW/bin/"
       - "C:/Program Files/nodejs/"
-      - "D:/TortoiseSVN/bin/"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/wangxiang/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "D:/miktex/miktex/bin/x64/"
@@ -7817,9 +7747,6 @@ events:
       - "C:/Program Files/nodejs/glslangValidator.com"
       - "C:/Program Files/nodejs/glslangValidator.exe"
       - "C:/Program Files/nodejs/glslangValidator"
-      - "D:/TortoiseSVN/bin/glslangValidator.com"
-      - "D:/TortoiseSVN/bin/glslangValidator.exe"
-      - "D:/TortoiseSVN/bin/glslangValidator"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/glslangValidator.com"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/glslangValidator.exe"
       - "C:/Users/wangxiang/AppData/Local/Microsoft/WindowsApps/glslangValidator"
@@ -7925,7 +7852,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -7990,27 +7916,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6GuiToolsConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6GuiToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6guitools-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6guitools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6GuiTools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6GuiTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6guitools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6guitools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6GuiTools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6GuiTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6guitools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6guitools.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -8082,7 +8008,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -8141,27 +8066,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6GuiConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6GuiConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6gui-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6gui-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Gui.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Gui.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6gui.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6gui.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6Gui.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6Gui.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6gui.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6gui.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -8233,7 +8158,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -8298,27 +8222,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6WidgetsToolsConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6WidgetsToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6widgetstools-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6widgetstools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6WidgetsTools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6WidgetsTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgetstools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgetstools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6WidgetsTools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6WidgetsTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6widgetstools.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6widgetstools.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -8390,7 +8314,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -8449,27 +8372,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6WidgetsConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6WidgetsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6widgets-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6widgets-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Widgets.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Widgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgets.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6Widgets.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6Widgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6widgets.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6widgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -8541,7 +8464,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -8608,27 +8530,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6ConcurrentConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6ConcurrentConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6concurrent-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6concurrent-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Concurrent.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Concurrent.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6concurrent.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6concurrent.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6Concurrent.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6Concurrent.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6concurrent.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6concurrent.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -8684,7 +8606,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -8751,27 +8672,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6NetworkConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6NetworkConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6network-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6network-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Network.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Network.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6network.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6network.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6Network.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6Network.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6network.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6network.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -8835,7 +8756,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -8894,27 +8814,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6MultimediaConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6MultimediaConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6multimedia-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6multimedia-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Multimedia.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Multimedia.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6multimedia.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6multimedia.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6Multimedia.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6Multimedia.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6multimedia.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6multimedia.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -9010,7 +8930,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -9069,27 +8988,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6MultimediaWidgetsConfig.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6MultimediaWidgetsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6multimediawidgets-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6multimediawidgets-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6MultimediaWidgets.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6MultimediaWidgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6multimediawidgets.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6multimediawidgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6MultimediaWidgets.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6MultimediaWidgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6multimediawidgets.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6multimediawidgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -9153,7 +9072,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"
@@ -9230,27 +9148,27 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/Qt6Config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/qt6-config.cmake"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/Qt6.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/lib/cps/qt6.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/lib/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/Qt6.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "D:/GithubRemoteRepository/MusicPlayer/build/CMakeFiles/pkgRedirects/share/cps/qt6.cps"
+        path: "D:/GithubRemoteRepository/music-player/build/CMakeFiles/pkgRedirects/share/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -10714,7 +10632,6 @@ events:
         - "C:\\Users\\wangxiang\\MinGW\\bin"
         - "D:\\codeblocks\\MinGW\\bin"
         - "C:\\Program Files\\nodejs"
-        - "D:\\TortoiseSVN\\bin"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\wangxiang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "D:\\miktex\\miktex\\bin\\x64"

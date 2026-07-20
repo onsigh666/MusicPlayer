@@ -1,7 +1,7 @@
 CMakeFiles/MusicPlayer.dir/src/library.cpp.obj: \
- D:\GithubRemoteRepository\MusicPlayer\src\library.cpp \
- D:\GithubRemoteRepository\MusicPlayer\src\library.h \
- D:\GithubRemoteRepository\MusicPlayer\src\track.h \
+ D:\GithubRemoteRepository\music-player\src\library.cpp \
+ D:\GithubRemoteRepository\music-player\src\library.h \
+ D:\GithubRemoteRepository\music-player\src\track.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QFileInfo \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qfileinfo.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qcompare.h \

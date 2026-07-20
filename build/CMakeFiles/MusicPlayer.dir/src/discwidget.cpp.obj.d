@@ -1,6 +1,6 @@
 CMakeFiles/MusicPlayer.dir/src/discwidget.cpp.obj: \
- D:\GithubRemoteRepository\MusicPlayer\src\discwidget.cpp \
- D:\GithubRemoteRepository\MusicPlayer\src\discwidget.h \
+ D:\GithubRemoteRepository\music-player\src\discwidget.cpp \
+ D:\GithubRemoteRepository\music-player\src\discwidget.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QTimer \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qtimer.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qglobal.h \

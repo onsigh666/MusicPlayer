@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\GithubRemoteRepository\MusicPlayer
+CMAKE_SOURCE_DIR = D:\GithubRemoteRepository\music-player
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\GithubRemoteRepository\MusicPlayer\build
+CMAKE_BINARY_DIR = D:\GithubRemoteRepository\music-player\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\GithubRemoteRepository\MusicPlayer\build\CMakeFiles D:\GithubRemoteRepository\MusicPlayer\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\GithubRemoteRepository\music-player\build\CMakeFiles D:\GithubRemoteRepository\music-player\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\GithubRemoteRepository\MusicPlayer\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\GithubRemoteRepository\music-player\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,30 @@ MusicPlayer_autogen/mocs_compilation.s: MusicPlayer_autogen/mocs_compilation.cpp
 MusicPlayer_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.s
 .PHONY : MusicPlayer_autogen/mocs_compilation.cpp.s
+
+src/audioanalyzer.obj: src/audioanalyzer.cpp.obj
+.PHONY : src/audioanalyzer.obj
+
+# target to build an object file
+src/audioanalyzer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/audioanalyzer.cpp.obj
+.PHONY : src/audioanalyzer.cpp.obj
+
+src/audioanalyzer.i: src/audioanalyzer.cpp.i
+.PHONY : src/audioanalyzer.i
+
+# target to preprocess a source file
+src/audioanalyzer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/audioanalyzer.cpp.i
+.PHONY : src/audioanalyzer.cpp.i
+
+src/audioanalyzer.s: src/audioanalyzer.cpp.s
+.PHONY : src/audioanalyzer.s
+
+# target to generate assembly for a file
+src/audioanalyzer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/audioanalyzer.cpp.s
+.PHONY : src/audioanalyzer.cpp.s
 
 src/discwidget.obj: src/discwidget.cpp.obj
 .PHONY : src/discwidget.obj
@@ -346,6 +370,30 @@ src/playlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/playlist.cpp.s
 .PHONY : src/playlist.cpp.s
 
+src/spectrumwidget.obj: src/spectrumwidget.cpp.obj
+.PHONY : src/spectrumwidget.obj
+
+# target to build an object file
+src/spectrumwidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/spectrumwidget.cpp.obj
+.PHONY : src/spectrumwidget.cpp.obj
+
+src/spectrumwidget.i: src/spectrumwidget.cpp.i
+.PHONY : src/spectrumwidget.i
+
+# target to preprocess a source file
+src/spectrumwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/spectrumwidget.cpp.i
+.PHONY : src/spectrumwidget.cpp.i
+
+src/spectrumwidget.s: src/spectrumwidget.cpp.s
+.PHONY : src/spectrumwidget.s
+
+# target to generate assembly for a file
+src/spectrumwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/spectrumwidget.cpp.s
+.PHONY : src/spectrumwidget.cpp.s
+
 src/transcoder.obj: src/transcoder.cpp.obj
 .PHONY : src/transcoder.obj
 
@@ -384,6 +432,9 @@ help:
 	@echo ... MusicPlayer_autogen/mocs_compilation.obj
 	@echo ... MusicPlayer_autogen/mocs_compilation.i
 	@echo ... MusicPlayer_autogen/mocs_compilation.s
+	@echo ... src/audioanalyzer.obj
+	@echo ... src/audioanalyzer.i
+	@echo ... src/audioanalyzer.s
 	@echo ... src/discwidget.obj
 	@echo ... src/discwidget.i
 	@echo ... src/discwidget.s
@@ -405,6 +456,9 @@ help:
 	@echo ... src/playlist.obj
 	@echo ... src/playlist.i
 	@echo ... src/playlist.s
+	@echo ... src/spectrumwidget.obj
+	@echo ... src/spectrumwidget.i
+	@echo ... src/spectrumwidget.s
 	@echo ... src/transcoder.obj
 	@echo ... src/transcoder.i
 	@echo ... src/transcoder.s

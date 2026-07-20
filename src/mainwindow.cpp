@@ -1,8 +1,10 @@
 #include "mainwindow.h"
+#include "audioanalyzer.h"
 #include "library.h"
 #include "lrcparser.h"
 #include "player.h"
 #include "playlist.h"
+#include "spectrumwidget.h"
 #include "track.h"
 #include "transcoder.h"
 
@@ -64,6 +66,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
   m_library = new Library(this);
   m_lrc = new LrcParser();
   m_transcoder = new Transcoder(this);
+  m_analyzer = new AudioAnalyzer(this);
 
   // 恢复上次主题设置
   QSettings settings;
@@ -273,6 +276,13 @@ void MainWindow::setupUI() {
 
   mainLayout->addLayout(middleLayout);
 
+  // 频谱可视化（进度条上方）
+  m_spectrum = new SpectrumWidget(m_central);
+  m_spectrum->setFixedHeight(52);
+  m_spectrum->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
+  mainLayout->addWidget(m_spectrum);
+  mainLayout->addSpacing(4);
+
   // 进度条 + 时间
   auto *progressLayout = new QHBoxLayout;
   m_progressSlider = new QSlider(Qt::Horizontal, m_central);
@@ -448,6 +458,30 @@ void MainWindow::wireSignals() {
     }
   });
 
+  // Player → 频谱
+  connect(m_player, &Player::positionChanged, m_spectrum,
+          &SpectrumWidget::setPosition);
+  connect(m_player, &Player::stateChanged, m_spectrum,
+          [this](Player::State s) {
+            switch (s) {
+            case Player::Playing:
+              m_spectrum->startAnimating();
+              break;
+            case Player::Paused:
+              m_spectrum->pauseAnimating();
+              break;
+            case Player::Stopped:
+              m_spectrum->stopAnimating();
+              break;
+            }
+          });
+
+  // AudioAnalyzer → UI
+  connect(m_analyzer, &AudioAnalyzer::analysisComplete, this,
+          &MainWindow::onAnalysisComplete);
+  connect(m_analyzer, &AudioAnalyzer::analysisFailed, this,
+          &MainWindow::onAnalysisFailed);
+
   // Playlist → UI
   connect(m_playlist, &Playlist::currentIndexChanged, this,
           &MainWindow::refreshCurrentRow);
@@ -497,6 +531,9 @@ void MainWindow::onClearAll() {
   m_lyricWidget->clear();
   m_lrc->clear();
   m_lyricLine = -1;
+  m_analyzer->cancel();
+  m_spectrum->clearData();
+  m_currentAnalysis = {};
 
   saveLibraryTracks();
 }
@@ -531,6 +568,9 @@ void MainWindow::onNext() {
   m_infoArtist->setText(QString());
   m_infoAlbum->setText(QString());
   autoLoadLyric(t.filePath);
+  // 触发频谱分析
+  m_spectrum->clearData();
+  triggerAudioAnalysis(t.filePath, t.duration);
 }
 
 void MainWindow::onPrevious() {
@@ -546,6 +586,8 @@ void MainWindow::onPrevious() {
   m_infoArtist->setText(QString());
   m_infoAlbum->setText(QString());
   autoLoadLyric(t.filePath);
+  m_spectrum->clearData();
+  triggerAudioAnalysis(t.filePath, t.duration);
 }
 
 void MainWindow::onPlaylistDoubleClicked(const QModelIndex &index) {
@@ -820,6 +862,8 @@ void MainWindow::loadCurrentTrack() {
   m_infoArtist->setText(QString());
   m_infoAlbum->setText(QString());
   autoLoadLyric(t.filePath);
+  m_spectrum->clearData();
+  triggerAudioAnalysis(t.filePath, t.duration);
 }
 
 // ─────────────────────── 歌词 ───────────────────────
@@ -1093,6 +1137,7 @@ void MainWindow::applyTheme() {
 
   // ── 光碟 ──
   m_disc->setDarkMode(dark);
+  m_spectrum->setDarkMode(dark);
 
   // ── 换肤按钮文字 ──
   m_themeBtn->setText(dark ? "切换浅色模式" : "切换深色模式");
@@ -1207,4 +1252,28 @@ QString MainWindow::formatTime(qint64 ms) {
   return QString("%1:%2")
       .arg(secs / 60, 2, 10, QChar('0'))
       .arg(secs % 60, 2, 10, QChar('0'));
+}
+
+// ─────────────────────── 频谱分析 ───────────────────────
+
+void MainWindow::triggerAudioAnalysis(const QString &filePath,
+                                       qint64 /*durationMs*/) {
+  m_analyzer->cancel();
+  m_currentAnalysis = {};
+  // 无论 duration 是否为 0 都启动分析，实际时长从 PCM 数据推算
+  m_analyzer->analyze(filePath);
+}
+
+void MainWindow::onAnalysisComplete(const AnalysisData &data) {
+  // 仅当分析结果仍对应当前曲目时才更新
+  const Track &t = m_playlist->currentTrack();
+  if (t.filePath.isEmpty())
+    return;
+  m_currentAnalysis = data;
+  m_spectrum->setAnalysisData(data);
+}
+
+void MainWindow::onAnalysisFailed(const QString &reason) {
+  // 静默降级到空闲动画
+  Q_UNUSED(reason);
 }

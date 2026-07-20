@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"D:/GithubRemoteRepository/MusicPlayer/build/Debug/cmake_install.cmake"
+		"D:/GithubRemoteRepository/music-player/build/Debug/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -1,12 +1,16 @@
-D:/GithubRemoteRepository/MusicPlayer/build/Debug/MusicPlayer_autogen/UVLADIE3JM/moc_mainwindow.cpp: D:/GithubRemoteRepository/MusicPlayer/src/mainwindow.h \
-  D:/GithubRemoteRepository/MusicPlayer/build/Debug/MusicPlayer_autogen/moc_predefs.h \
-  D:/GithubRemoteRepository/MusicPlayer/src/discwidget.h \
-  D:/GithubRemoteRepository/MusicPlayer/src/player.h \
-  D:/GithubRemoteRepository/MusicPlayer/src/track.h \
+D:/GithubRemoteRepository/music-player/build/Debug/MusicPlayer_autogen/UVLADIE3JM/moc_mainwindow.cpp: D:/GithubRemoteRepository/music-player/src/mainwindow.h \
+  D:/GithubRemoteRepository/music-player/build/Debug/MusicPlayer_autogen/moc_predefs.h \
+  D:/GithubRemoteRepository/music-player/src/audioanalyzer.h \
+  D:/GithubRemoteRepository/music-player/src/discwidget.h \
+  D:/GithubRemoteRepository/music-player/src/player.h \
+  D:/GithubRemoteRepository/music-player/src/spectrumwidget.h \
+  D:/GithubRemoteRepository/music-player/src/track.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/QByteArray \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QFileInfo \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QString \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QTimer \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
   D:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/q20functional.h \
@@ -145,6 +149,7 @@ D:/GithubRemoteRepository/MusicPlayer/build/Debug/MusicPlayer_autogen/UVLADIE3JM
   D:/Qt/6.11.1/mingw_64/include/QtCore/qutf8stringview.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qvariant.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qvarlengtharray.h \
+  D:/Qt/6.11.1/mingw_64/include/QtCore/qvector.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qversiontagging.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qxptype_traits.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/qyieldcpu.h \
@@ -174,6 +179,11 @@ D:/GithubRemoteRepository/MusicPlayer/build/Debug/MusicPlayer_autogen/UVLADIE3JM
   D:/Qt/6.11.1/mingw_64/include/QtGui/qtransform.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Qt/6.11.1/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/Qt/6.11.1/mingw_64/include/QtMultimedia/QAudioFormat \
+  D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qaudioformat.h \
+  D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+  D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+  D:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
   D:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
