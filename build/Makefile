@@ -370,6 +370,30 @@ src/playlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/playlist.cpp.s
 .PHONY : src/playlist.cpp.s
 
+src/playmodestrategy.obj: src/playmodestrategy.cpp.obj
+.PHONY : src/playmodestrategy.obj
+
+# target to build an object file
+src/playmodestrategy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/playmodestrategy.cpp.obj
+.PHONY : src/playmodestrategy.cpp.obj
+
+src/playmodestrategy.i: src/playmodestrategy.cpp.i
+.PHONY : src/playmodestrategy.i
+
+# target to preprocess a source file
+src/playmodestrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/playmodestrategy.cpp.i
+.PHONY : src/playmodestrategy.cpp.i
+
+src/playmodestrategy.s: src/playmodestrategy.cpp.s
+.PHONY : src/playmodestrategy.s
+
+# target to generate assembly for a file
+src/playmodestrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MusicPlayer.dir\build.make CMakeFiles/MusicPlayer.dir/src/playmodestrategy.cpp.s
+.PHONY : src/playmodestrategy.cpp.s
+
 src/spectrumwidget.obj: src/spectrumwidget.cpp.obj
 .PHONY : src/spectrumwidget.obj
 
@@ -456,6 +480,9 @@ help:
 	@echo ... src/playlist.obj
 	@echo ... src/playlist.i
 	@echo ... src/playlist.s
+	@echo ... src/playmodestrategy.obj
+	@echo ... src/playmodestrategy.i
+	@echo ... src/playmodestrategy.s
 	@echo ... src/spectrumwidget.obj
 	@echo ... src/spectrumwidget.i
 	@echo ... src/spectrumwidget.s

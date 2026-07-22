@@ -451,6 +451,7 @@ CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj: \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QList \
  D:\GithubRemoteRepository\music-player\src\lrcparser.h \
  D:\GithubRemoteRepository\music-player\src\playlist.h \
+ D:\GithubRemoteRepository\music-player\src\playmodestrategy.h \
  D:\GithubRemoteRepository\music-player\src\transcoder.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QProcess \
  D:/Qt/6.11.1/mingw_64/include/QtCore/qprocess.h \

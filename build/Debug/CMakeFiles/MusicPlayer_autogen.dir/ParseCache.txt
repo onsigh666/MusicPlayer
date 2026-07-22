@@ -1850,6 +1850,7 @@ D:/GithubRemoteRepository/music-player/src/playlist.h
  mmc:Q_OBJECT
  mdp:D:/GithubRemoteRepository/music-player/build/Debug/MusicPlayer_autogen/moc_predefs.h
  mdp:D:/GithubRemoteRepository/music-player/src/playlist.h
+ mdp:D:/GithubRemoteRepository/music-player/src/playmodestrategy.h
  mdp:D:/GithubRemoteRepository/music-player/src/track.h
  mdp:D:/Qt/6.11.1/mingw_64/include/QtCore/QFileInfo
  mdp:D:/Qt/6.11.1/mingw_64/include/QtCore/QList
@@ -2227,6 +2228,7 @@ D:/GithubRemoteRepository/music-player/src/playlist.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
+D:/GithubRemoteRepository/music-player/src/playmodestrategy.h
 D:/GithubRemoteRepository/music-player/src/spectrumwidget.h
  mmc:Q_OBJECT
  mdp:D:/GithubRemoteRepository/music-player/build/Debug/MusicPlayer_autogen/moc_predefs.h
@@ -2950,5 +2952,6 @@ D:/GithubRemoteRepository/music-player/src/main.cpp
 D:/GithubRemoteRepository/music-player/src/mainwindow.cpp
 D:/GithubRemoteRepository/music-player/src/player.cpp
 D:/GithubRemoteRepository/music-player/src/playlist.cpp
+D:/GithubRemoteRepository/music-player/src/playmodestrategy.cpp
 D:/GithubRemoteRepository/music-player/src/spectrumwidget.cpp
 D:/GithubRemoteRepository/music-player/src/transcoder.cpp

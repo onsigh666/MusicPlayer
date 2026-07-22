@@ -123,6 +123,8 @@ MusicPlayer_autogen/timestamp: \
 	D:/GithubRemoteRepository/music-player/src/player.h \
 	D:/GithubRemoteRepository/music-player/src/playlist.cpp \
 	D:/GithubRemoteRepository/music-player/src/playlist.h \
+	D:/GithubRemoteRepository/music-player/src/playmodestrategy.cpp \
+	D:/GithubRemoteRepository/music-player/src/playmodestrategy.h \
 	D:/GithubRemoteRepository/music-player/src/spectrumwidget.cpp \
 	D:/GithubRemoteRepository/music-player/src/spectrumwidget.h \
 	D:/GithubRemoteRepository/music-player/src/track.h \

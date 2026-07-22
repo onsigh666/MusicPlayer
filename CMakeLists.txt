@@ -38,6 +38,8 @@ add_executable(${PROJECT_NAME} WIN32
     src/audioanalyzer.h
     src/spectrumwidget.cpp
     src/spectrumwidget.h
+    src/playmodestrategy.cpp
+    src/playmodestrategy.h
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE

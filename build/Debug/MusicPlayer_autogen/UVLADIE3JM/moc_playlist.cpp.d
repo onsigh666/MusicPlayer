@@ -1,5 +1,6 @@
 D:/GithubRemoteRepository/music-player/build/Debug/MusicPlayer_autogen/UVLADIE3JM/moc_playlist.cpp: D:/GithubRemoteRepository/music-player/src/playlist.h \
   D:/GithubRemoteRepository/music-player/build/Debug/MusicPlayer_autogen/moc_predefs.h \
+  D:/GithubRemoteRepository/music-player/src/playmodestrategy.h \
   D:/GithubRemoteRepository/music-player/src/track.h \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QFileInfo \
   D:/Qt/6.11.1/mingw_64/include/QtCore/QList \

@@ -73,17 +73,7 @@ void Playlist::setCurrentIndex(int index) {
 Track Playlist::next() {
     if (m_tracks.isEmpty()) return Track();
 
-    int nextIdx = m_currentIndex;
-    switch (m_playMode) {
-    case PlayMode::RepeatOne:
-        // 手动切歌：前进到下一首（原地循环由 onTrackEnded 处理）
-    case PlayMode::Repeat:
-        nextIdx = (m_currentIndex + 1) % m_tracks.size();
-        break;
-    case PlayMode::Shuffle:
-        nextIdx = QRandomGenerator::global()->bounded(m_tracks.size());
-        break;
-    }
+    int nextIdx = m_strategy->next(m_currentIndex, m_tracks.size());
 
     if (m_currentIndex >= 0) m_history.prepend(m_currentIndex);
     m_currentIndex = nextIdx;
@@ -102,7 +92,20 @@ Track Playlist::previous() {
     return m_tracks.at(prevIdx);
 }
 
-void Playlist::setPlayMode(PlayMode mode) { m_playMode = mode; }
+void Playlist::setPlayMode(PlayMode mode) {
+    m_playMode = mode;
+    switch (mode) {
+    case PlayMode::Repeat:
+        m_strategy = std::make_unique<RepeatStrategy>();
+        break;
+    case PlayMode::RepeatOne:
+        m_strategy = std::make_unique<RepeatOneStrategy>();
+        break;
+    case PlayMode::Shuffle:
+        m_strategy = std::make_unique<ShuffleStrategy>();
+        break;
+    }
+}
 
 void Playlist::shuffle() {
     for (int i = m_tracks.size() - 1; i > 0; --i) {

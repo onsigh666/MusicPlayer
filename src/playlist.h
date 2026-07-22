@@ -1,10 +1,13 @@
 #ifndef PLAYLIST_H
 #define PLAYLIST_H
 
+#include "playmodestrategy.h"
 #include "track.h"
 
 #include <QList>
 #include <QObject>
+
+#include <memory>
 
 /// 播放模式
 enum class PlayMode { Repeat, Shuffle, RepeatOne };
@@ -45,6 +48,8 @@ private:
     QList<Track> m_tracks;
     int m_currentIndex = -1;
     PlayMode m_playMode = PlayMode::Repeat;
+    std::unique_ptr<PlayModeStrategy> m_strategy{
+        std::make_unique<RepeatStrategy>()};
     QList<int> m_history; // 播放历史，用于 previous()
 };
 

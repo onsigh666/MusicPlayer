@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/GithubRemoteRepository/music-player/src/mainwindow.cpp" "CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/src/mainwindow.cpp.obj.d"
   "D:/GithubRemoteRepository/music-player/src/player.cpp" "CMakeFiles/MusicPlayer.dir/src/player.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/src/player.cpp.obj.d"
   "D:/GithubRemoteRepository/music-player/src/playlist.cpp" "CMakeFiles/MusicPlayer.dir/src/playlist.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/src/playlist.cpp.obj.d"
+  "D:/GithubRemoteRepository/music-player/src/playmodestrategy.cpp" "CMakeFiles/MusicPlayer.dir/src/playmodestrategy.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/src/playmodestrategy.cpp.obj.d"
   "D:/GithubRemoteRepository/music-player/src/spectrumwidget.cpp" "CMakeFiles/MusicPlayer.dir/src/spectrumwidget.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/src/spectrumwidget.cpp.obj.d"
   "D:/GithubRemoteRepository/music-player/src/transcoder.cpp" "CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.obj" "gcc" "CMakeFiles/MusicPlayer.dir/src/transcoder.cpp.obj.d"
   )

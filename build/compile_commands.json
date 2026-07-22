@@ -64,5 +64,11 @@
   "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\spectrumwidget.cpp.obj -c D:\\GithubRemoteRepository\\music-player\\src\\spectrumwidget.cpp",
   "file": "D:/GithubRemoteRepository/music-player/src/spectrumwidget.cpp",
   "output": "CMakeFiles/MusicPlayer.dir/src/spectrumwidget.cpp.obj"
+},
+{
+  "directory": "D:/GithubRemoteRepository/music-player/build/Debug",
+  "command": "D:\\Qt\\Tools\\mingw1310_64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles\\MusicPlayer.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\MusicPlayer.dir\\src\\playmodestrategy.cpp.obj -c D:\\GithubRemoteRepository\\music-player\\src\\playmodestrategy.cpp",
+  "file": "D:/GithubRemoteRepository/music-player/src/playmodestrategy.cpp",
+  "output": "CMakeFiles/MusicPlayer.dir/src/playmodestrategy.cpp.obj"
 }
 ]

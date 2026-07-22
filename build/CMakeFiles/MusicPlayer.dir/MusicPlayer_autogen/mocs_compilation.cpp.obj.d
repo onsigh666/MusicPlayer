@@ -462,6 +462,7 @@ CMakeFiles/MusicPlayer.dir/MusicPlayer_autogen/mocs_compilation.cpp.obj: \
  D:/GithubRemoteRepository/music-player/src/player.h \
  D:\GithubRemoteRepository\music-player\build\MusicPlayer_autogen\UVLADIE3JM/moc_playlist.cpp \
  D:/GithubRemoteRepository/music-player/src/playlist.h \
+ D:/GithubRemoteRepository/music-player/src/playmodestrategy.h \
  D:/Qt/6.11.1/mingw_64/include/QtCore/QList \
  D:\GithubRemoteRepository\music-player\build\MusicPlayer_autogen\UVLADIE3JM/moc_spectrumwidget.cpp \
  D:/GithubRemoteRepository/music-player/src/spectrumwidget.h \
